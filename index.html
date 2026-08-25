@@ -1431,25 +1431,23 @@
       }
 
       function pickBestVoice() {
-        // Priority: US English male voices first (most natural / expressive in most browsers)
+        // Priority: Indian English first, then US, UK fallbacks
         const tries = [
-          v => v.lang === 'en-US' && /david/i.test(v.name),         // Microsoft David
-          v => v.lang === 'en-US' && /mark/i.test(v.name),          // Microsoft Mark
-          v => v.lang === 'en-US' && /guy/i.test(v.name),           // Microsoft Guy / Edge
-          v => v.lang === 'en-US' && /aaron/i.test(v.name),         // Apple Aaron
-          v => v.lang === 'en-US' && /alex/i.test(v.name),          // macOS Alex
-          v => v.lang === 'en-US' && /tom/i.test(v.name),           // macOS Tom
-          v => v.lang === 'en-US' && /fred/i.test(v.name),          // macOS Fred
-          v => /Google US English/i.test(v.name),                    // Chrome's default US voice
-          v => v.lang === 'en-US' && !femalePattern.test(v.name),    // Any other US male voice
-          v => v.lang === 'en-US',                                   // Any US voice
-          // Fallback to UK English male
+          v => /Ravi|Rishi|Prabhat/i.test(v.name),                    // Known Indian male voices
+          v => v.lang === 'en-IN' && !femalePattern.test(v.name),      // Any Indian English male
+          v => v.lang === 'en-IN',                                      // Any Indian English
+          v => v.lang === 'en-US' && /david/i.test(v.name),            // Microsoft David
+          v => v.lang === 'en-US' && /mark/i.test(v.name),             // Microsoft Mark
+          v => v.lang === 'en-US' && /guy/i.test(v.name),              // Microsoft Guy / Edge
+          v => v.lang === 'en-US' && /aaron/i.test(v.name),            // Apple Aaron
+          v => v.lang === 'en-US' && /alex/i.test(v.name),             // macOS Alex
+          v => v.lang === 'en-US' && /tom/i.test(v.name),              // macOS Tom
+          v => v.lang === 'en-US' && /fred/i.test(v.name),             // macOS Fred
+          v => /Google US English/i.test(v.name),                       // Chrome's default US voice
+          v => v.lang === 'en-US' && !femalePattern.test(v.name),      // Any other US male voice
+          v => v.lang === 'en-US',                                      // Any US voice
           v => v.lang === 'en-GB' && /daniel|george|ryan|arthur/i.test(v.name),
           v => v.lang === 'en-GB' && !femalePattern.test(v.name),
-          // Fallback to Indian English male
-          v => /Ravi|Rishi|Prabhat/i.test(v.name),
-          v => v.lang === 'en-IN' && !femalePattern.test(v.name),
-          // Last resort: any English male voice
           v => v.lang.startsWith('en') && !femalePattern.test(v.name),
           v => v.lang.startsWith('en')
         ];
@@ -1481,7 +1479,7 @@
         // Pick best one voice per region
         const curated = [];
         const seenLangs = new Set();
-        for (const lang of ['en-US', 'en-GB', 'en-IN', 'en-AU']) {
+        for (const lang of ['en-IN', 'en-US', 'en-GB', 'en-AU']) {
           const inLang = maleVoices.filter(v => v.lang === lang);
           if (!inLang.length) continue;
           const pick = preferred[lang] ? inLang.find(v => preferred[lang].test(v.name)) : null;
