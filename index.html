@@ -31,6 +31,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Mohan Prakasham · Azure AI Engineer & Multi-Agent AI Developer" />
   <meta name="twitter:description" content="Microsoft Certified Azure AI Engineer building intelligent multi-agent systems and LLM-powered cloud applications." />
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/30443083?v=4" />
 
   <!-- Theme & Favicon -->
   <meta name="theme-color" content="#1e40af" />
@@ -793,8 +794,9 @@
         <div class="w-9 h-9 rounded-lg overflow-hidden border-2 border-slate-200 group-hover:border-blue-500 transition-colors flex-shrink-0">
           <img src="https://avatars.githubusercontent.com/u/30443083?v=4" alt="MP" class="w-full h-full object-cover" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'w-full h-full bg-slate-900 flex items-center justify-center text-white font-bold text-sm\'>MP</div>';" />
         </div>
-        <span class="font-semibold tracking-tight hidden sm:block text-slate-900">Mohan Prakasham</span>
+        <span class="font-semibold tracking-tight text-slate-900 text-sm sm:text-base">AI & Cloud Engineer</span>
       </a>
+      <!-- Desktop nav links -->
       <div class="hidden md:flex items-center gap-1" id="navLinks">
         <a href="#home" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Home</a>
         <a href="#about" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">About</a>
@@ -804,7 +806,8 @@
         <a href="#achievements" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Achievements</a>
         <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Contact</a>
       </div>
-      <div class="hidden sm:flex items-center gap-2">
+      <!-- Desktop action buttons -->
+      <div class="hidden md:flex items-center gap-2">
         <div class="relative" id="downloadMenuWrap">
           <button onclick="toggleDownloadMenu(event)" aria-label="Download resume options" title="Download resume" class="w-9 h-9 rounded-md border border-slate-200 bg-white text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
@@ -834,11 +837,38 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
         </a>
       </div>
+      <!-- Mobile: download + hamburger -->
+      <div class="flex md:hidden items-center gap-2">
+        <button onclick="printATSPDF()" title="Download ATS Resume" class="w-9 h-9 rounded-md border border-slate-200 bg-white text-slate-700 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        </button>
+        <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="w-9 h-9 rounded-md border border-slate-200 bg-white text-slate-700 flex items-center justify-center">
+          <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu panel -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-lg">
+      <div class="px-4 py-3 space-y-1">
+        <a href="#home" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">Home</a>
+        <a href="#about" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">About</a>
+        <a href="#skills" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">Skills</a>
+        <a href="#certifications" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">Certifications</a>
+        <a href="#experience" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">Experience</a>
+        <a href="#achievements" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">Achievements</a>
+        <a href="#contact" onclick="closeMobileMenu()" class="block px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-md">Contact</a>
+      </div>
+      <div class="px-4 py-3 border-t border-slate-100 flex gap-2">
+        <button onclick="printVisualPDF(); closeMobileMenu();" class="flex-1 py-2.5 text-sm font-medium text-center bg-slate-100 text-slate-800 rounded-md hover:bg-slate-200">Visual Resume</button>
+        <a href="https://www.linkedin.com/in/mohan-prakasham/" target="_blank" rel="noopener" onclick="closeMobileMenu()" class="flex-1 py-2.5 text-sm font-medium text-center bg-[#0A66C2] text-white rounded-md">LinkedIn</a>
+        <a href="#contact" onclick="closeMobileMenu()" class="flex-1 py-2.5 text-sm font-medium text-center bg-slate-900 text-white rounded-md">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+  <section id="home" class="relative flex items-center pt-12 pb-8 md:pt-16 md:pb-12 overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50/40"></div>
     <div class="absolute inset-0 dot-grid"></div>
     <!-- Animated mesh gradient blobs -->
@@ -880,7 +910,7 @@
       </div>
     </div>
 
-    <div class="relative max-w-6xl mx-auto px-6 py-20 w-full">
+    <div class="relative max-w-6xl mx-auto px-6 py-6 md:py-10 w-full">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-full text-sm text-slate-600 mb-6 shadow-sm">
@@ -955,9 +985,9 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-24 bg-white">
+  <section id="about" class="py-8 md:py-14 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl mb-16">
+      <div class="max-w-3xl mb-6 md:mb-8">
         <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
           <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">About</div>
           <button data-narrate="about" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
@@ -975,9 +1005,9 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-24 bg-slate-50">
+  <section id="skills" class="py-8 md:py-14 bg-slate-50">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl mb-12">
+      <div class="max-w-3xl mb-6 md:mb-8">
         <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
           <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Technical Skills</div>
           <button data-narrate="skills" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
@@ -1002,9 +1032,9 @@
   </section>
 
   <!-- Certifications -->
-  <section id="certifications" class="py-24 bg-white">
+  <section id="certifications" class="py-8 md:py-14 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl mb-12">
+      <div class="max-w-3xl mb-6 md:mb-8">
         <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
           <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Certifications</div>
           <button data-narrate="certifications" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
@@ -1032,9 +1062,9 @@
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="py-24 bg-slate-50">
+  <section id="experience" class="py-8 md:py-14 bg-slate-50">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl mb-12">
+      <div class="max-w-3xl mb-6 md:mb-8">
         <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
           <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Experience</div>
           <button data-narrate="experience" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
@@ -1053,9 +1083,9 @@
   </section>
 
   <!-- Achievements -->
-  <section id="achievements" class="py-24 bg-white">
+  <section id="achievements" class="py-8 md:py-14 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="max-w-3xl mb-12">
+      <div class="max-w-3xl mb-6 md:mb-8">
         <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
           <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Achievements</div>
           <button data-narrate="achievements" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
@@ -1084,7 +1114,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+  <section id="contact" class="py-8 md:py-14 bg-slate-900 text-white relative overflow-hidden">
     <div class="absolute inset-0 dot-grid-dark"></div>
     <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
@@ -1769,10 +1799,31 @@
       const menu = document.getElementById('downloadMenu');
       if (menu) menu.classList.add('hidden');
     }
-    // Close download menu when clicking outside
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const hamburger = document.getElementById('hamburgerIcon');
+      const close = document.getElementById('closeIcon');
+      if (!menu) return;
+      menu.classList.toggle('hidden');
+      hamburger.classList.toggle('hidden');
+      close.classList.toggle('hidden');
+    }
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const hamburger = document.getElementById('hamburgerIcon');
+      const close = document.getElementById('closeIcon');
+      if (!menu) return;
+      menu.classList.add('hidden');
+      if (hamburger) hamburger.classList.remove('hidden');
+      if (close) close.classList.add('hidden');
+    }
+    // Close menus when clicking outside
     document.addEventListener('click', (e) => {
       const wrap = document.getElementById('downloadMenuWrap');
       if (wrap && !wrap.contains(e.target)) closeDownloadMenu();
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      if (mobileMenu && mobileBtn && !mobileMenu.classList.contains('hidden') && !mobileMenu.contains(e.target) && !mobileBtn.contains(e.target)) closeMobileMenu();
     });
 
     // ===== HERO ANIMATIONS (Combo A) =====
