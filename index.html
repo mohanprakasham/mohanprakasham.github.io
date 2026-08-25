@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohan Prakasham · Senior Software Engineer & Azure AI Engineer</title>
+  <meta name="description" content="Mohan Prakasham — Microsoft Certified Azure AI Engineer building multi-agent AI systems, LLM integrations, and intelligent cloud applications. 17 years of engineering experience at Cognizant Technology Solutions." />
+
+  <!-- SEO & Identity -->
+  <meta name="author" content="Mohan Prakasham" />
+  <meta name="keywords" content="Mohan Prakasham, Azure AI Engineer, AI-102, Multi-Agent AI, LLM Integration, Meta Llama, Groq AI, PhiData, Azure OpenAI, Senior Software Engineer, Cognizant, .NET, C#, Python, FastAPI, Angular, ForgeRock CIAM, OKTA, Azure Functions, AI Architecture, insurance, healthcare, real estate, retail, Chennai, India" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- Open Graph (LinkedIn, Facebook, WhatsApp previews) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Mohan Prakasham · Azure AI Engineer & Multi-Agent AI Developer" />
+  <meta property="og:description" content="Microsoft Certified Azure AI Engineer (AI-102) building multi-agent AI systems, LLM integrations, and intelligent cloud applications. 17 years of engineering experience." />
+  <meta property="og:url" content="https://mohanprakasham.github.io/" />
+  <meta property="og:site_name" content="Mohan Prakasham Portfolio" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="profile:first_name" content="Mohan" />
+  <meta property="profile:last_name" content="Prakasham" />
+  <meta property="profile:gender" content="male" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohan Prakasham · Azure AI Engineer & Multi-Agent AI Developer" />
+  <meta name="twitter:description" content="Microsoft Certified Azure AI Engineer building intelligent multi-agent systems and LLM-powered cloud applications." />
+
+  <!-- Theme & Favicon -->
+  <meta name="theme-color" content="#1e40af" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231e40af'/><text x='50' y='68' text-anchor='middle' fill='white' font-family='Arial,sans-serif' font-size='48' font-weight='700'>MP</text></svg>" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231e40af'/><text x='50' y='68' text-anchor='middle' fill='white' font-family='Arial,sans-serif' font-size='48' font-weight='700'>MP</text></svg>" />
+
+  <!-- Schema.org Person (structured data for Google, LinkedIn Recruiter, AI search tools) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohan Prakasham",
+    "givenName": "Mohan",
+    "familyName": "Prakasham",
+    "jobTitle": "Senior Software Engineer",
+    "description": "Software engineer driven by code quality, performance, and an unbroken curiosity for what comes next — seventeen years of mission-critical delivery across insurance, healthcare, real estate, and retail, now turning toward intelligent systems.",
+    "email": "mohan.prakasham@cognizant.com",
+    "telephone": "+91-900-303-4264",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Cognizant Technology Solutions"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "R.M.K. Engineering College, Anna University",
+      "address": "Chennai, India"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/mohan-prakasham/"
+    ],
+    "knowsAbout": [
+      "Azure AI Engineering",
+      "Multi-Agent AI Systems",
+      "Cloud Architecture",
+      "Microsoft .NET Core",
+      "C# Programming",
+      "Python FastAPI",
+      "Angular Framework",
+      "ForgeRock CIAM",
+      "OKTA Identity Management",
+      "Azure Functions",
+      "Microservices Architecture",
+      "RAG Patterns",
+      "LLM Integration"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Microsoft Certified: Azure AI Engineer Associate (AI-102)",
+        "credentialCategory": "Professional Certification",
+        "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Microsoft Certified: Azure Developer Associate (AZ-204)",
+        "credentialCategory": "Professional Certification",
+        "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+        "credentialCategory": "Professional Certification",
+        "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif; }
+    .dot-grid { background-image: radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.06) 1px, transparent 0); background-size: 40px 40px; }
+    .dot-grid-dark { background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1px, transparent 0); background-size: 40px 40px; }
+    .nav-link.active { color: #1d4ed8; background-color: #eff6ff; }
+    .tab-btn.active { background-color: #0f172a; color: white; }
+    .tab-btn { background-color: white; color: #334155; border: 1px solid #e2e8f0; }
+    .tab-btn:hover:not(.active) { background-color: #f1f5f9; }
+    .project-content { display: none; }
+    .project-card.expanded .project-content { display: block; }
+    .project-card.expanded .chevron { transform: rotate(180deg); }
+    .chevron { transition: transform 0.2s; }
+    @keyframes ping-slow { 75%, 100% { transform: scale(2); opacity: 0; } }
+    .animate-ping-slow { animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    .fade-in { animation: fadeIn 0.3s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* === MOHAN AVATAR ANIMATIONS === */
+    @keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.015); } }
+    @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+    @keyframes pulse-ring { 0% { transform: scale(0.95); opacity: 0.7; } 100% { transform: scale(1.4); opacity: 0; } }
+    @keyframes wave { 0%, 100% { height: 4px; } 50% { height: 16px; } }
+    .avatar-svg { animation: breathe 4s ease-in-out infinite; transform-origin: center; }
+    .avatar-svg .eyes { animation: blink 5s infinite; transform-origin: 100px 105px; }
+    .pulse-ring { animation: pulse-ring 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    .wave-bar { animation: wave 0.6s ease-in-out infinite; }
+    .wave-bar:nth-child(1) { animation-delay: 0s; }
+    .wave-bar:nth-child(2) { animation-delay: 0.1s; }
+    .wave-bar:nth-child(3) { animation-delay: 0.2s; }
+    .wave-bar:nth-child(4) { animation-delay: 0.3s; }
+    .wave-bar:nth-child(5) { animation-delay: 0.4s; }
+
+    .narrate-btn { transition: all 0.2s; }
+    .narrate-btn:hover { transform: translateY(-1px); }
+    .narrate-btn.playing { background-color: #1d4ed8 !important; color: white !important; border-color: #1d4ed8 !important; }
+    .narrate-btn.playing svg { color: white !important; }
+
+    .mohan-widget { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .mohan-widget.minimized { width: 84px; height: 84px; }
+    .mohan-widget.expanded { width: 380px; }
+    @media (max-width: 640px) {
+      .mohan-widget.expanded { width: calc(100vw - 32px); }
+    }
+    .caption-word { transition: color 0.1s; }
+    .caption-word.spoken { color: #1d4ed8; font-weight: 500; }
+
+    /* === HERO ENHANCEMENTS (Combo A) === */
+    /* Animated gradient mesh blobs */
+    @keyframes mesh-drift-1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(40px, -20px) scale(1.08); }
+      66% { transform: translate(-30px, 30px) scale(0.95); }
+    }
+    @keyframes mesh-drift-2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-50px, 25px) scale(1.12); }
+    }
+    @keyframes mesh-drift-3 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      40% { transform: translate(30px, 40px) scale(1.05); }
+      70% { transform: translate(-30px, -15px) scale(0.92); }
+    }
+    .mesh-blob { will-change: transform; }
+    .mesh-1 { animation: mesh-drift-1 22s ease-in-out infinite; }
+    .mesh-2 { animation: mesh-drift-2 28s ease-in-out infinite; }
+    .mesh-3 { animation: mesh-drift-3 18s ease-in-out infinite; }
+    .mesh-4 { animation: mesh-drift-1 26s ease-in-out infinite reverse; }
+
+    /* Floating tech-stack icons */
+    @keyframes tech-float-a {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-14px) rotate(4deg); }
+    }
+    @keyframes tech-float-b {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(14px) rotate(-4deg); }
+    }
+    .tech-icon { will-change: transform; }
+    .tech-a { animation: tech-float-a 7s ease-in-out infinite; }
+    .tech-b { animation: tech-float-b 9s ease-in-out infinite; }
+    .tech-c { animation: tech-float-a 8s ease-in-out infinite 1.5s; }
+    .tech-d { animation: tech-float-b 6.5s ease-in-out infinite 2s; }
+    .tech-e { animation: tech-float-a 10s ease-in-out infinite 0.7s; }
+    .tech-f { animation: tech-float-b 8.5s ease-in-out infinite 2.5s; }
+
+    /* Typing animation cursor */
+    .typing-cursor::after {
+      content: '|';
+      display: inline-block;
+      animation: cursor-blink 1.1s step-end infinite;
+      color: #2563eb;
+      font-weight: 300;
+      margin-left: 4px;
+    }
+    @keyframes cursor-blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    /* Avatar container — fully transparent so the page background shows through cleanly
+       around the SVG badge. The SVG circle itself fills 100% of the container. */
+    #avatarContainer {
+      background: transparent !important;
+      background-color: transparent !important;
+    }
+
+    /* Left-align section header rows */
+    section .flex.items-center.justify-between.flex-wrap.gap-3.mb-3 {
+      justify-content: flex-start !important;
+    }
+
+    /* === ATS-friendly print / Save as PDF styles === */
+    @media print {
+      /* Hide only the floating interactive widget and audio buttons */
+      nav, #mohanWidget, .narrate-btn, button[data-narrate] { display: none !important; }
+
+      /* Hide the project expand/collapse arrows (no meaning in PDF) */
+      .chevron { display: none !important; }
+
+      /* Expand all collapsed projects so PDF has every detail */
+      .project-content,
+      .project-card .project-content,
+      .project-card:not(.expanded) .project-content {
+        display: block !important;
+        visibility: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        transform: none !important;
+        animation: none !important;
+      }
+
+      /* Clean printable background */
+      body { color: #0f172a !important; background: white !important; font-size: 10.5pt; line-height: 1.45; padding: 0 !important; }
+
+      /* Remove section backgrounds but keep icons and structure */
+      section { padding: 0.75rem 0 !important; min-height: 0 !important; page-break-inside: auto; }
+      .bg-slate-900 { background: white !important; color: #0f172a !important; }
+      .bg-slate-50, .bg-slate-100 { background: #f8fafc !important; }
+
+      /* About section icon containers — keep dark navy background so white icons inside show */
+      #about .w-11.h-11.rounded-lg.bg-slate-900,
+      #about .w-11.h-11.bg-slate-900 {
+        background-color: #0f172a !important;
+        color: white !important;
+      }
+      #about .w-11.h-11.bg-slate-900 svg { color: white !important; stroke: white !important; }
+
+      /* Achievement icon containers — keep light gray with dark icons */
+      #achievements .w-10.h-10.bg-slate-50 {
+        background-color: #f1f5f9 !important;
+      }
+      #achievements .w-10.h-10.bg-slate-50 svg { color: #334155 !important; stroke: #334155 !important; }
+
+      /* Current Role briefcase icon container in hero */
+      #home .bg-blue-50 { background-color: #eff6ff !important; }
+      #home .bg-blue-50 svg { stroke: #2563eb !important; }
+
+      /* Status pill (Available for AI engineering roles) — keep green dot visible */
+      #home .bg-green-500, #home .bg-green-400 { background-color: #22c55e !important; }
+      #home .relative.flex.h-2.w-2 .relative { background-color: #22c55e !important; display: inline-block !important; width: 0.5rem !important; height: 0.5rem !important; border-radius: 9999px !important; }
+
+      /* Keep section icons visible — they're meaningful content */
+      svg, svg * { display: inline-block !important; visibility: visible !important; opacity: 1 !important; }
+      svg circle, svg rect, svg path, svg polygon, svg line, svg ellipse, svg text {
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      /* Color preservation for icons (Chrome/Edge respect this for print color accuracy) */
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+
+      /* Make sure all text colors are readable on white */
+      .text-white { color: #0f172a !important; }
+      .text-slate-300, .text-slate-400, .text-slate-500 { color: #475569 !important; }
+      .text-blue-400, .text-blue-600 { color: #1d4ed8 !important; }
+      .text-green-700, .text-green-600 { color: #15803d !important; }
+
+      /* Keep colored badges and tags visible */
+      .bg-green-50, .bg-green-100, .bg-blue-50, .bg-blue-100, .bg-slate-100 { background-color: #f1f5f9 !important; }
+
+      /* Borders should remain visible */
+      [class*="border"] { border-color: #cbd5e1 !important; }
+      .border-white\\/10, .border-white\\/20 { border-color: #cbd5e1 !important; }
+
+      /* Reduce decorative backgrounds but keep important ones (cert badges) */
+      .blur-3xl, .dot-grid, .dot-grid-dark, .mesh-blob { display: none !important; }
+      .ring-4, .ring-2 { box-shadow: none !important; }
+
+      /* KEEP shadows on cards for visual separation in PDF */
+      .shadow-lg, .shadow-xl, .shadow-2xl, .shadow-md, .shadow-sm, .shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important; }
+
+      /* Avoid awkward page breaks */
+      .project-card, .group, h2, h3 { break-inside: avoid; page-break-inside: avoid; }
+      h2, h3 { break-after: avoid; page-break-after: avoid; color: #0f172a !important; }
+
+      /* === ORPHAN HEADING PREVENTION === */
+      /* Section header blocks (label + audio button + h2 + intro text) must stay together
+         and stay attached to the first content card below */
+      section .max-w-3xl {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+      }
+      /* Small uppercase section labels (ABOUT, TECHNICAL SKILLS, etc.) must stay with their heading */
+      section .text-sm.font-medium.text-blue-600.uppercase,
+      section .text-sm.font-medium.text-blue-400.uppercase {
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+      }
+      /* h2 must stay with following content */
+      h2 { break-after: avoid-page !important; page-break-after: avoid !important; }
+      /* The paragraph right after h2 must also stay near content */
+      h2 + p, h2 ~ p { break-before: avoid !important; page-break-before: avoid !important; }
+
+      /* Keep Current Role widget (right-side card in hero) together */
+      #home .lg\\:col-span-5 > .relative,
+      #home .lg\\:col-span-5 .bg-white.border.border-slate-200.rounded-3xl {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      /* Keep About competency cards from breaking mid-card */
+      #about .group { break-inside: avoid !important; page-break-inside: avoid !important; }
+      /* Keep certification cards from breaking mid-card */
+      #certifications .group { break-inside: avoid !important; page-break-inside: avoid !important; }
+      /* Keep achievement cards from breaking */
+      #achievements .group { break-inside: avoid !important; page-break-inside: avoid !important; }
+      /* Keep each skill category together */
+      .print-skill-category { break-inside: avoid !important; page-break-inside: avoid !important; }
+
+      /* Force a page break BEFORE each section heading if it would orphan
+         (this guarantees the heading appears with its content) */
+      section:not(#home) { page-break-before: auto; }
+
+      /* Tighter spacing between sections in PDF — less risk of half-empty pages */
+      section { padding: 0.5rem 0 !important; }
+      section .mb-12, section .mb-16 { margin-bottom: 0.75rem !important; }
+
+      /* Expand external links to show full URLs */
+      a[href^="http"]:after, a[href^="mailto"]:after, a[href^="tel"]:after {
+        content: " (" attr(href) ")"; font-size: 88%; color: #64748b;
+      }
+      a[href^="#"]:after { content: ""; }
+
+      /* === SKILLS SECTION — PDF SHOWS ALL CATEGORIES === */
+      /* Hide the interactive tab buttons (no point in PDF) */
+      #skills #skillTabs { display: none !important; }
+      /* Hide the white box container that wraps the active tab content */
+      #skills .bg-white.border.border-slate-200.rounded-2xl.p-8 { display: none !important; }
+      /* Hide the dynamically-rendered active tab grid (we'll show all categories instead) */
+      #skills #skillsGrid { display: none !important; }
+      /* Show our print-only all-categories block */
+      #printAllSkills { display: block !important; }
+      /* Hide the Expert/Advanced legend (we add it differently per category) */
+      #skills .mt-6.text-sm.text-slate-500 { display: none !important; }
+      /* Compact skill chip styling for PDF */
+      .print-skill-chip {
+        display: inline-block !important;
+        padding: 2px 8px !important;
+        margin: 2px 3px 2px 0 !important;
+        font-size: 9.5pt !important;
+        border-radius: 4px !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #f8fafc !important;
+        color: #0f172a !important;
+      }
+      .print-skill-chip.expert {
+        background: #0f172a !important;
+        color: white !important;
+        border-color: #0f172a !important;
+        font-weight: 600 !important;
+      }
+      .print-skill-category {
+        margin-top: 0.85rem !important;
+        page-break-inside: avoid !important;
+      }
+      .print-skill-category h4 {
+        font-size: 10pt !important;
+        font-weight: 700 !important;
+        color: #1d4ed8 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        margin-bottom: 0.35rem !important;
+      }
+
+      /* Compact hero — keep all content visible */
+      #home { min-height: 0 !important; padding: 0 !important; padding-top: 0 !important; }
+      #home > .relative.max-w-6xl { padding-top: 0.5rem !important; padding-bottom: 1rem !important; }
+      #home h1 { font-size: 28pt !important; line-height: 1.05 !important; margin-bottom: 0.75rem !important; }
+      #home .mb-6 { margin-bottom: 0.5rem !important; }
+      #home .mb-10 { margin-bottom: 0.75rem !important; }
+      #home .mb-4 { margin-bottom: 0.3rem !important; }
+      #home .pt-8 { padding-top: 0.75rem !important; }
+      #home .gap-12 { gap: 1.5rem !important; }
+
+      /* Keep the "Available for AI engineering roles" pill visible */
+      #home .inline-flex.items-center.gap-2.px-3.py-1\\.5 { background-color: white !important; border: 1px solid #cbd5e1 !important; color: #0f172a !important; }
+
+      /* Strip timeline vertical line */
+      .absolute.left-4, .absolute.left-2 { display: none !important; }
+      .pl-12, .pl-16 { padding-left: 0 !important; }
+
+      /* Page setup */
+      @page { margin: 0.4in 0.5in 0.5in 0.5in; }
+      @page :first { margin-top: 0.3in; }
+    }
+
+    /* =====================================================================
+       ATS-OPTIMIZED PRINT MODE
+       Activated when body has .ats-print-mode class.
+       Strips ALL decorative content (badges, icons, gradients, hex shapes)
+       and shows pure text content optimized for ATS parsing.
+       ===================================================================== */
+    @media print {
+      body.ats-print-mode * {
+        font-family: 'Arial', 'Helvetica', sans-serif !important;
+        color: #000 !important;
+        background: white !important;
+        box-shadow: none !important;
+        border-color: #666 !important;
+        text-shadow: none !important;
+      }
+      /* Hide everything decorative */
+      body.ats-print-mode nav,
+      body.ats-print-mode #mohanWidget,
+      body.ats-print-mode .narrate-btn,
+      body.ats-print-mode button[data-narrate],
+      body.ats-print-mode .chevron,
+      body.ats-print-mode .mesh-blob,
+      body.ats-print-mode .tech-icon,
+      body.ats-print-mode .dot-grid,
+      body.ats-print-mode .dot-grid-dark,
+      body.ats-print-mode #home .inline-flex.items-center.gap-2.px-3,
+      body.ats-print-mode #home .lg\\:col-span-5,
+      body.ats-print-mode #home .grid.grid-cols-2,
+      body.ats-print-mode #home svg,
+      body.ats-print-mode #about svg,
+      body.ats-print-mode #about .w-11,
+      body.ats-print-mode #certifications svg,
+      body.ats-print-mode #certifications .relative.flex-shrink-0,
+      body.ats-print-mode #achievements svg,
+      body.ats-print-mode #achievements .w-10,
+      body.ats-print-mode #experience .absolute,
+      body.ats-print-mode #experience svg,
+      body.ats-print-mode #contact .grid.lg\\:grid-cols-2 > div:last-child,
+      body.ats-print-mode #contact svg,
+      body.ats-print-mode #skills #skillTabs,
+      body.ats-print-mode #skills .bg-white.border.border-slate-200.rounded-2xl,
+      body.ats-print-mode #skills #skillsGrid,
+      body.ats-print-mode .blur-3xl,
+      body.ats-print-mode .ring-4, body.ats-print-mode .ring-2,
+      body.ats-print-mode .typing-cursor::after,
+      body.ats-print-mode .stat-count,
+      body.ats-print-mode .hero-stat {
+        display: none !important;
+        visibility: hidden !important;
+      }
+
+      /* Reset hero — show only essential info */
+      body.ats-print-mode #home {
+        padding: 0 !important;
+        min-height: 0 !important;
+      }
+      body.ats-print-mode #home > .relative {
+        padding: 0 !important;
+      }
+      body.ats-print-mode #home .lg\\:col-span-7 {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        grid-column: 1 / -1 !important;
+      }
+      body.ats-print-mode #home h1 {
+        font-size: 22pt !important;
+        font-weight: 700 !important;
+        margin: 0 0 6pt 0 !important;
+        line-height: 1.15 !important;
+      }
+      body.ats-print-mode #home h1 span { color: #000 !important; }
+      body.ats-print-mode #home p {
+        font-size: 11pt !important;
+        margin-bottom: 6pt !important;
+        line-height: 1.4 !important;
+      }
+      body.ats-print-mode #home p span { color: #000 !important; font-weight: 600 !important; }
+      body.ats-print-mode #home #typingText::before {
+        content: "Senior Software Engineer | Azure AI Engineer | Multi-Agent AI Developer";
+        font-size: 13pt !important;
+        font-weight: 600 !important;
+      }
+      body.ats-print-mode #home #typingText { font-size: 0 !important; }
+
+      /* All section labels become bold uppercase headings */
+      body.ats-print-mode section {
+        padding: 8pt 0 !important;
+        page-break-inside: auto !important;
+      }
+      body.ats-print-mode .max-w-3xl, body.ats-print-mode .max-w-6xl {
+        max-width: 100% !important;
+      }
+      body.ats-print-mode section h2 {
+        font-size: 14pt !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        margin: 12pt 0 4pt 0 !important;
+        padding-bottom: 2pt !important;
+        border-bottom: 1.5pt solid #000 !important;
+        page-break-after: avoid !important;
+      }
+      body.ats-print-mode section .text-sm.font-medium.uppercase {
+        display: none !important;
+      }
+      body.ats-print-mode section h3 {
+        font-size: 11pt !important;
+        font-weight: 700 !important;
+        margin: 8pt 0 2pt 0 !important;
+        page-break-after: avoid !important;
+      }
+      body.ats-print-mode section h4 {
+        font-size: 10pt !important;
+        font-weight: 700 !important;
+        margin: 6pt 0 2pt 0 !important;
+      }
+      body.ats-print-mode section p, body.ats-print-mode section li, body.ats-print-mode section span, body.ats-print-mode section div {
+        font-size: 10pt !important;
+        line-height: 1.4 !important;
+      }
+
+      /* About: remove card styling, render as plain paragraphs */
+      body.ats-print-mode #about .grid {
+        display: block !important;
+      }
+      body.ats-print-mode #about .group {
+        background: white !important;
+        border: none !important;
+        padding: 4pt 0 !important;
+        margin-bottom: 4pt !important;
+        page-break-inside: avoid !important;
+      }
+      body.ats-print-mode #about .group h3 {
+        font-size: 11pt !important;
+        font-weight: 700 !important;
+      }
+      /* Force-hide About icon containers AND their inner svgs (both layers) */
+      body.ats-print-mode #about .w-11,
+      body.ats-print-mode #about .w-11.h-11,
+      body.ats-print-mode #about .group > div:first-child,
+      body.ats-print-mode #about svg,
+      body.ats-print-mode #about [class*="rounded-lg"]:first-child {
+        display: none !important;
+        visibility: hidden !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      /* Skills: keep print-all-skills block, plain text format */
+      body.ats-print-mode #printAllSkills { display: block !important; }
+      body.ats-print-mode .print-skill-category {
+        margin: 4pt 0 !important;
+        page-break-inside: avoid !important;
+      }
+      body.ats-print-mode .print-skill-category h4 {
+        color: #000 !important;
+        font-size: 10pt !important;
+      }
+      body.ats-print-mode .print-skill-chip {
+        background: white !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        color: #000 !important;
+        font-size: 10pt !important;
+        font-weight: 400 !important;
+        display: inline !important;
+      }
+      body.ats-print-mode .print-skill-chip::after { content: ", "; color: #000 !important; }
+      body.ats-print-mode .print-skill-chip:last-child::after { content: ""; }
+      /* Expert skills marked with bold + asterisk for clarity in plain-text format */
+      body.ats-print-mode .print-skill-chip.expert {
+        font-weight: 700 !important;
+        text-decoration: none !important;
+      }
+      body.ats-print-mode .print-skill-chip.expert::before {
+        content: "";
+      }
+      /* Skills legend — plain text format */
+      body.ats-print-mode #printAllSkills > div:last-child {
+        margin-top: 6pt !important;
+        font-size: 9pt !important;
+        font-style: italic !important;
+        color: #000 !important;
+      }
+      body.ats-print-mode #printAllSkills > div:last-child span {
+        display: none !important;
+      }
+      body.ats-print-mode #printAllSkills > div:last-child::before {
+        content: "Note: Skills shown in bold indicate Expert level; remaining are Advanced.";
+        font-size: 9pt !important;
+        font-style: italic !important;
+        color: #000 !important;
+      }
+
+      /* Certifications: plain list */
+      body.ats-print-mode #certifications .grid {
+        display: block !important;
+      }
+      body.ats-print-mode #certifications .group {
+        background: white !important;
+        border: none !important;
+        padding: 2pt 0 !important;
+        margin: 0 !important;
+        page-break-inside: avoid !important;
+      }
+      body.ats-print-mode #certifications .group > div > div:last-child {
+        padding: 0 !important;
+      }
+      body.ats-print-mode #certifications .inline-flex {
+        background: white !important;
+        border: none !important;
+        padding: 0 !important;
+        font-size: 10pt !important;
+      }
+      body.ats-print-mode #certifications .mt-10 {
+        margin-top: 6pt !important;
+        background: white !important;
+        border: none !important;
+        padding: 0 !important;
+      }
+
+      /* Experience: expand all projects, plain format */
+      body.ats-print-mode .project-content { display: block !important; visibility: visible !important; opacity: 1 !important; height: auto !important; max-height: none !important; }
+      body.ats-print-mode .project-card {
+        padding-left: 0 !important;
+        margin-bottom: 8pt !important;
+        page-break-inside: avoid !important;
+      }
+      body.ats-print-mode .project-card > button {
+        background: white !important;
+        border: none !important;
+        padding: 0 !important;
+      }
+      body.ats-print-mode .project-card .rounded-2xl {
+        background: white !important;
+        border: none !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+      }
+      body.ats-print-mode .project-card h3 {
+        font-size: 11pt !important;
+        font-weight: 700 !important;
+        margin: 6pt 0 1pt 0 !important;
+      }
+      body.ats-print-mode .project-card .text-xs {
+        font-size: 9.5pt !important;
+        background: white !important;
+        padding: 0 !important;
+        margin: 0 4pt 0 0 !important;
+        border: none !important;
+      }
+      body.ats-print-mode .project-card .bg-slate-100, body.ats-print-mode .project-card .bg-green-100, body.ats-print-mode .project-card .bg-blue-100 {
+        background: white !important;
+        font-weight: 400 !important;
+      }
+      body.ats-print-mode .project-card ul {
+        list-style: disc !important;
+        padding-left: 16pt !important;
+        margin: 2pt 0 !important;
+      }
+      body.ats-print-mode .project-card li {
+        font-size: 10pt !important;
+        margin: 1pt 0 !important;
+      }
+
+      /* Achievements: plain bulleted list with year inline */
+      body.ats-print-mode #achievements .grid {
+        display: block !important;
+      }
+      body.ats-print-mode #achievements .group {
+        background: white !important;
+        border: none !important;
+        padding: 1pt 0 !important;
+        margin: 0 !important;
+        page-break-inside: avoid !important;
+        display: block !important;
+      }
+      body.ats-print-mode #achievements .group > div {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6pt !important;
+      }
+      body.ats-print-mode #achievements .group > div > div:last-child {
+        display: block !important;
+      }
+      body.ats-print-mode #achievements h4 {
+        font-size: 10pt !important;
+        font-weight: 600 !important;
+        margin: 0 0 1pt 0 !important;
+        display: block !important;
+      }
+      body.ats-print-mode #achievements .group h4::before { content: ""; }
+      body.ats-print-mode #achievements p {
+        display: block !important;
+        font-size: 10pt !important;
+        margin: 0 !important;
+      }
+      body.ats-print-mode #achievements p::before { content: ""; }
+      /* Hide the year div completely — already mentioned in the detail */
+      body.ats-print-mode #achievements .group .text-xs.text-slate-400.mt-2 {
+        display: none !important;
+      }
+
+      /* Education: plain text */
+      body.ats-print-mode #achievements .mt-16 {
+        background: white !important;
+        border: none !important;
+        padding: 4pt 0 !important;
+        margin-top: 8pt !important;
+      }
+
+      /* Contact: plain text */
+      body.ats-print-mode #contact {
+        background: white !important;
+        padding: 6pt 0 !important;
+      }
+      body.ats-print-mode #contact h2, body.ats-print-mode #contact * {
+        color: #000 !important;
+      }
+      body.ats-print-mode #contact h2 { font-size: 14pt !important; }
+      body.ats-print-mode #contact h2 br { display: none !important; }
+      body.ats-print-mode #contact h2 span { font-size: 14pt !important; color: #000 !important; }
+      body.ats-print-mode #contact .flex.flex-wrap.gap-3 {
+        display: none !important;
+      }
+
+      /* Footer cleanup */
+      body.ats-print-mode #contact .mt-16 {
+        display: none !important;
+      }
+      body.ats-print-mode #contact .border-t {
+        display: none !important;
+      }
+      /* Prevent trailing empty page by stripping any margins/padding from last section */
+      body.ats-print-mode #contact {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+      }
+      body.ats-print-mode #contact > .relative {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+      }
+      body.ats-print-mode {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+      }
+      /* Allow contact section to flow naturally without forcing extra page space */
+      body.ats-print-mode #contact .grid {
+        display: block !important;
+      }
+      body.ats-print-mode #contact h2 + p {
+        margin-bottom: 4pt !important;
+      }
+
+      /* Page setup for ATS mode */
+      body.ats-print-mode { font-size: 10pt; }
+      @page { margin: 0.5in; }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+
+  <!-- Skip-to-content link for screen readers (WCAG 2.1) -->
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[10000] focus:px-4 focus:py-2 focus:bg-slate-900 focus:text-white focus:rounded-lg focus:no-underline">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-lg overflow-hidden border-2 border-slate-200 group-hover:border-blue-500 transition-colors flex-shrink-0">
+          <img src="https://avatars.githubusercontent.com/u/30443083?v=4" alt="MP" class="w-full h-full object-cover" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'w-full h-full bg-slate-900 flex items-center justify-center text-white font-bold text-sm\'>MP</div>';" />
+        </div>
+        <span class="font-semibold tracking-tight hidden sm:block text-slate-900">Mohan Prakasham</span>
+      </a>
+      <div class="hidden md:flex items-center gap-1" id="navLinks">
+        <a href="#home" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Home</a>
+        <a href="#about" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">About</a>
+        <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Skills</a>
+        <a href="#certifications" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Certifications</a>
+        <a href="#experience" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Experience</a>
+        <a href="#achievements" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Achievements</a>
+        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors">Contact</a>
+      </div>
+      <div class="hidden sm:flex items-center gap-2">
+        <div class="relative" id="downloadMenuWrap">
+          <button onclick="toggleDownloadMenu(event)" aria-label="Download resume options" title="Download resume" class="w-9 h-9 rounded-md border border-slate-200 bg-white text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          </button>
+          <div id="downloadMenu" class="hidden absolute right-0 mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl py-1 z-50">
+            <button onclick="printVisualPDF(); closeDownloadMenu();" class="w-full text-left px-4 py-3 hover:bg-slate-50 flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 flex-shrink-0"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">Visual Resume</div>
+                <div class="text-xs text-slate-500 mt-0.5">Designed PDF with icons & badges</div>
+              </div>
+            </button>
+            <button onclick="printATSPDF(); closeDownloadMenu();" class="w-full text-left px-4 py-3 hover:bg-slate-50 flex items-start gap-3 border-t border-slate-100">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 flex-shrink-0"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">ATS Resume</div>
+                <div class="text-xs text-slate-500 mt-0.5">Plain text, optimized for ATS</div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/mohan-prakasham/" target="_blank" rel="noopener" aria-label="LinkedIn profile" class="w-9 h-9 rounded-md border border-slate-200 bg-white text-slate-700 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-colors flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#contact" class="px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-md hover:bg-slate-800 transition-colors flex items-center gap-1.5">
+          Get in touch
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50/40"></div>
+    <div class="absolute inset-0 dot-grid"></div>
+    <!-- Animated mesh gradient blobs -->
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-blue-200/35 rounded-full blur-3xl mesh-blob mesh-1"></div>
+    <div class="absolute bottom-1/4 left-0 w-96 h-96 bg-teal-100/45 rounded-full blur-3xl mesh-blob mesh-2"></div>
+    <div class="absolute top-1/2 right-1/3 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl mesh-blob mesh-3"></div>
+    <div class="absolute top-10 left-1/3 w-72 h-72 bg-indigo-100/30 rounded-full blur-3xl mesh-blob mesh-4"></div>
+    <!-- Floating tech-stack icons (decorative background) -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden hidden md:block">
+      <div class="absolute top-[14%] left-[5%] tech-icon tech-a" style="opacity: 0.13;">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="#0078D4"><path d="M5.483 21.3H24l-9.83-17.025-3.667 9.829 5.83 7.196H6.04L5.483 21.3zm5.358-17.025L1 18.81h6.486l3.355-14.535z"/></svg>
+      </div>
+      <div class="absolute top-[8%] right-[42%] tech-icon tech-b" style="opacity: 0.14;">
+        <svg width="46" height="46" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="50" fill="#512BD4"/>
+          <text x="50" y="62" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="-1">.NET</text>
+        </svg>
+      </div>
+      <div class="absolute top-[58%] left-[8%] tech-icon tech-c" style="opacity: 0.13;">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="#3776AB"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+      </div>
+      <div class="absolute top-[42%] right-[4%] tech-icon tech-d" style="opacity: 0.13;">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="#DD0031"><path d="M9.93 12.645h4.134L11.996 7.74M11.996.009L.686 3.988l1.722 14.65 9.588 5.354 9.588-5.354 1.722-14.65L11.996.01zm7.058 18.297h-2.636l-1.42-3.501H8.995l-1.42 3.501H4.937l7.06-15.648 7.057 15.648z"/></svg>
+      </div>
+      <div class="absolute bottom-[12%] left-[38%] tech-icon tech-e" style="opacity: 0.16;">
+        <svg width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="foundryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00B7C3"/>
+              <stop offset="100%" stop-color="#0078D4"/>
+            </linearGradient>
+          </defs>
+          <polygon points="50,8 86,29 86,71 50,92 14,71 14,29" fill="url(#foundryGrad)"/>
+          <text x="50" y="58" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="-1">AI</text>
+        </svg>
+      </div>
+      <div class="absolute top-[72%] right-[28%] tech-icon tech-f" style="opacity: 0.11;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+      </div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-20 w-full">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-200 rounded-full text-sm text-slate-600 mb-6 shadow-sm">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            Available for AI engineering roles
+          </div>
+          <div class="flex items-center gap-6 mb-6">
+            <!-- Profile photo -->
+            <div class="relative flex-shrink-0">
+              <div class="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-400 via-teal-300 to-blue-600 opacity-60 blur-sm"></div>
+              <img
+                src="https://avatars.githubusercontent.com/u/30443083?v=4"
+                alt="Mohan Prakasham"
+                class="relative w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-4 border-white shadow-xl"
+                loading="eager"
+                onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\'relative w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-white shadow-xl bg-gradient-to-br from-blue-700 to-slate-900 flex items-center justify-center text-white font-bold text-2xl\'>MP</div>';"
+              />
+              <!-- Available dot -->
+              <span class="absolute bottom-1 right-1 w-4 h-4 bg-green-400 border-2 border-white rounded-full shadow"></span>
+            </div>
+            <!-- Name -->
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900" style="line-height: 1.05;">
+              Mohan<br />Prakasham<span class="text-blue-600">.</span>
+            </h1>
+          </div>
+          <p class="text-xl md:text-2xl text-slate-600 mb-4 font-light min-h-[1.8em]">
+            <span id="typingText" class="typing-cursor font-medium text-slate-800">Senior Software Engineer</span>
+          </p>
+          <p class="text-lg md:text-xl text-slate-700 max-w-2xl mb-6 leading-relaxed font-normal">
+            Software engineer driven by <span class="text-slate-900 font-semibold">sound architecture</span>, <span class="text-slate-900 font-semibold">code quality</span>, <span class="text-slate-900 font-semibold">performance</span>, and <span class="text-slate-900 font-semibold">security</span> — seventeen years of mission-critical delivery across insurance, healthcare, real estate, and retail, with an unbroken curiosity for what comes next: <span class="text-blue-600 font-semibold">intelligent systems</span>.
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 mt-2 border-t border-slate-200">
+            <div><div class="text-3xl font-bold text-slate-900">17+</div><div class="text-sm text-slate-500 mt-1">Years Experience</div></div>
+            <div><div class="text-3xl font-bold text-slate-900">10</div><div class="text-sm text-slate-500 mt-1">Major Projects</div></div>
+            <div><div class="text-3xl font-bold text-slate-900">7</div><div class="text-sm text-slate-500 mt-1">Certifications</div></div>
+            <div><div class="text-3xl font-bold text-slate-900">4</div><div class="text-sm text-slate-500 mt-1">Industries</div></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-100 via-teal-50 to-purple-50 rounded-3xl rotate-3"></div>
+            <div class="relative bg-white border border-slate-200 rounded-3xl p-8 shadow-xl">
+              <div class="flex items-start justify-between mb-6">
+                <div>
+                  <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">Current Role</div>
+                  <div class="font-semibold text-slate-900">Senior Software Engineer</div>
+                  <div class="text-sm text-slate-500 mt-0.5">Cognizant Technology Solutions</div>
+                </div>
+                <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+              </div>
+              <div class="space-y-4 pt-4 border-t border-slate-100">
+                <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-md bg-slate-50 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div><div class="flex-1"><div class="text-sm font-medium text-slate-900">AI & Multi-Agent Systems</div><div class="text-xs text-slate-500">Azure AI · Llama · PhiData</div></div></div>
+                <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-md bg-slate-50 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 15.9"/></svg></div><div class="flex-1"><div class="text-sm font-medium text-slate-900">Cloud Architecture</div><div class="text-xs text-slate-500">Azure · PCF · Microservices</div></div></div>
+                <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-md bg-slate-50 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="flex-1"><div class="text-sm font-medium text-slate-900">Identity & Access</div><div class="text-xs text-slate-500">ForgeRock · OKTA · Azure AD</div></div></div>
+                <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-md bg-slate-50 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="flex-1"><div class="text-sm font-medium text-slate-900">Full-Stack Development</div><div class="text-xs text-slate-500">.NET · Python · Angular</div></div></div>
+              </div>
+              <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="text-sm text-slate-600">Chennai, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+          <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">About</div>
+          <button data-narrate="about" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            Hear Mohan explain
+          </button>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Engineering enterprise solutions at scale.</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          Specialized in <span class="text-slate-900 font-medium">Azure AI Engineering</span>, cloud-native architecture, and full-stack development, with a proven track record of transforming complex business requirements into scalable, secure, and high-performance solutions across insurance, healthcare, real estate, and retail.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="competencies"></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-12">
+        <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+          <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Technical Skills</div>
+          <button data-narrate="skills" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            Hear Mohan explain
+          </button>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">A comprehensive technology stack.</h2>
+        <p class="text-lg text-slate-600">From cutting-edge AI frameworks to enterprise .NET ecosystems — built up over 17 years of hands-on delivery.</p>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-8" id="skillTabs"></div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3" id="skillsGrid"></div>
+      </div>
+      <!-- Print-only: all skill categories shown together for PDF -->
+      <div id="printAllSkills" style="display: none;"></div>
+      <div class="mt-6 text-sm text-slate-500 flex items-center gap-4 flex-wrap">
+        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-slate-900"></span> Expert</div>
+        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span> Advanced</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-12">
+        <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+          <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Certifications</div>
+          <button data-narrate="certifications" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            Hear Mohan explain
+          </button>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Microsoft Certified Professional.</h2>
+        <p class="text-lg text-slate-600">Committed to staying current with cutting-edge technologies through continuous learning and certification.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="certGrid"></div>
+      <div class="mt-10 p-6 bg-slate-50 border border-slate-200 rounded-2xl">
+        <h4 class="text-sm font-semibold text-slate-900 mb-3 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          Additional Training
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Managed Healthcare</span>
+          <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Agile Scrum for Practitioners</span>
+          <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">GitHub Copilot Mastery</span>
+          <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Multi-Agent AI Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-12">
+        <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+          <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Experience</div>
+          <button data-narrate="experience" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            Hear Mohan explain
+          </button>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">A timeline of impact.</h2>
+        <p class="text-lg text-slate-600">Eight major projects across global enterprises — from insurance giants in Scandinavia to healthcare leaders in the US, and now AI innovation for the UK's largest mutual.</p>
+      </div>
+      <div class="relative">
+        <div class="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-blue-300 via-slate-300 to-transparent"></div>
+        <div class="space-y-4" id="projectsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mb-12">
+        <div class="flex items-center justify-between flex-wrap gap-3 mb-3">
+          <div class="text-sm font-medium text-blue-600 uppercase tracking-wider">Achievements</div>
+          <button data-narrate="achievements" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium rounded-full hover:bg-slate-50 hover:border-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            Hear Mohan explain
+          </button>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Recognized excellence.</h2>
+        <p class="text-lg text-slate-600">Awards and recognitions earned across a career of innovation, leadership, and client impact.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" id="achievementsGrid"></div>
+      <div class="mt-16 p-8 bg-gradient-to-br from-slate-50 to-blue-50/30 border border-slate-200 rounded-2xl">
+        <div class="flex items-start gap-5">
+          <div class="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+          </div>
+          <div>
+            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Education</div>
+            <h3 class="text-xl font-semibold text-slate-900">Bachelor of Engineering</h3>
+            <p class="text-sm text-slate-600 mt-1">Electronics and Communication</p>
+            <p class="text-sm text-slate-500 mt-2">R.M.K. Engineering College, Anna University · Chennai · 2008</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-dark"></div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
+    <div class="relative max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <div class="text-sm font-medium text-blue-400 uppercase tracking-wider">Contact</div>
+            <button data-narrate="contact" class="narrate-btn inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 border border-white/20 text-white text-xs font-medium rounded-full hover:bg-white/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              Hear Mohan explain
+            </button>
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Let's build something<br /><span class="text-blue-400">exceptional</span> together.</h2>
+          <p class="text-lg text-slate-300 mb-8 leading-relaxed">Open to AI engineering roles, multi-agent system development, and AI architecture consulting — building intelligent, production-grade systems for forward-thinking teams.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:mohan.prakasham@cognizant.com" class="px-5 py-3 bg-white text-slate-900 text-sm font-medium rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Send an email
+            </a>
+            <a href="https://www.linkedin.com/in/mohan-prakasham/" target="_blank" rel="noopener" class="px-5 py-3 bg-[#0A66C2] text-white text-sm font-medium rounded-lg hover:bg-[#004182] transition-colors flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="tel:+919003034264" class="px-5 py-3 bg-white/10 text-white text-sm font-medium rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 border border-white/20">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +91 900-303-4264
+            </a>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="p-5 bg-white/5 backdrop-blur border border-white/10 rounded-xl">
+            <div class="flex items-center gap-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><div class="text-xs uppercase tracking-wider text-slate-400">Email</div></div>
+            <div class="text-sm font-medium">mohan.prakasham@cognizant.com</div>
+          </div>
+          <div class="p-5 bg-white/5 backdrop-blur border border-white/10 rounded-xl">
+            <div class="flex items-center gap-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div class="text-xs uppercase tracking-wider text-slate-400">Phone</div></div>
+            <div class="text-sm font-medium">+91 900-303-4264</div>
+          </div>
+          <div class="p-5 bg-white/5 backdrop-blur border border-white/10 rounded-xl">
+            <div class="flex items-center gap-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#60a5fa"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><div class="text-xs uppercase tracking-wider text-slate-400">LinkedIn</div></div>
+            <a href="https://www.linkedin.com/in/mohan-prakasham/" target="_blank" rel="noopener" class="text-sm font-medium hover:text-blue-300 transition-colors break-all">linkedin.com/in/mohan-prakasham</a>
+          </div>
+          <div class="p-5 bg-white/5 backdrop-blur border border-white/10 rounded-xl">
+            <div class="flex items-center gap-3 mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div class="text-xs uppercase tracking-wider text-slate-400">Location</div></div>
+            <div class="text-sm font-medium">Chennai, Tamil Nadu, India</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-slate-400">© 2026 Mohan Prakasham. Built with passion for engineering.</div>
+        <div class="text-xs text-slate-500">Senior Software Engineer · Cognizant Technology Solutions</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================== -->
+  <!-- MOHAN AVATAR — Floating speaking persona widget -->
+  <!-- =============================================== -->
+  <div id="mohanWidget" class="mohan-widget minimized fixed bottom-5 right-5 z-[9999] overflow-hidden">
+    <!-- Header (only visible when expanded) -->
+    <div id="widgetHeader" class="hidden items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="relative flex h-2 w-2 flex-shrink-0">
+          <span class="absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75 animate-ping"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+        </span>
+        <span id="widgetHeaderTitle" class="text-sm font-semibold truncate">Mohan is speaking</span>
+      </div>
+      <button onclick="MohanAvatar.minimize()" class="w-7 h-7 rounded hover:bg-white/20 flex items-center justify-center flex-shrink-0" title="Minimize">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+      </button>
+    </div>
+
+    <!-- Body: Avatar + Caption -->
+    <div id="widgetBody" class="flex items-start gap-3 cursor-pointer" onclick="MohanAvatar.handleClick()">
+      <!-- Avatar -->
+      <div class="relative flex-shrink-0">
+        <div id="pulseRings" class="hidden absolute inset-0 pointer-events-none">
+          <div class="absolute inset-0 rounded-full border-2 border-blue-400 pulse-ring"></div>
+          <div class="absolute inset-0 rounded-full border-2 border-blue-400 pulse-ring" style="animation-delay: 0.5s;"></div>
+        </div>
+        <div id="avatarContainer" class="w-16 h-16 relative">
+          <!-- Profile photo -->
+          <img
+            src="https://avatars.githubusercontent.com/u/30443083?v=4"
+            alt="Mohan Prakasham"
+            class="avatar-svg w-full h-full rounded-full object-cover border-2 border-white shadow-lg block"
+            onerror="this.onerror=null;this.style.display='none';document.getElementById('widgetAvatarFallback').style.display='flex';"
+          />
+          <!-- Fallback MP badge -->
+          <div id="widgetAvatarFallback" class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-800 to-slate-900 border-2 border-white shadow-lg items-center justify-center text-white font-bold text-lg" style="display:none;">MP</div>
+          <!-- Speaking wave overlay — sits on top of photo when active -->
+          <svg id="widgetMouthSvg" class="absolute inset-0 w-full h-full pointer-events-none opacity-0 transition-opacity duration-200" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <!-- Semi-transparent dark strip at bottom for wave visibility -->
+            <rect x="0" y="42" width="64" height="22" rx="0" fill="rgba(0,0,0,0.35)"/>
+            <path id="mohanMouth" d="M 18 54 L 18 56 M 24 52 L 24 57 M 30 51 L 30 58 M 36 52 L 36 57 M 42 54 L 42 56" stroke="#60a5fa" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Caption -->
+      <div id="widgetExpandedContent" class="hidden flex-1 min-w-0">
+        <div id="captionText" class="caption-scroll text-sm text-slate-800 leading-relaxed font-medium">—</div>
+      </div>
+    </div>
+
+    <!-- Controls (footer row) -->
+    <div id="widgetControls" class="hidden items-center gap-1.5 px-3 py-2.5 bg-slate-50 border-t border-slate-200 flex-wrap">
+      <button id="playPauseBtn" onclick="MohanAvatar.togglePause()" class="w-9 h-9 rounded-full bg-slate-900 hover:bg-slate-800 text-white flex items-center justify-center transition-colors" title="Pause / Resume">
+        <svg id="playPauseIcon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      </button>
+      <button onclick="MohanAvatar.stop()" class="w-9 h-9 rounded-full bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 flex items-center justify-center" title="Stop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12"/></svg>
+      </button>
+      <div class="flex items-center gap-1 ml-1">
+        <button data-speed="0.7" class="speed-btn px-2.5 py-1 text-xs rounded-md bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 hover:text-slate-900">0.7×</button>
+        <button data-speed="1" class="speed-btn px-2.5 py-1 text-xs rounded-md font-bold bg-slate-900 text-white border border-slate-900 shadow-sm">1×</button>
+        <button data-speed="1.4" class="speed-btn px-2.5 py-1 text-xs rounded-md bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 hover:text-slate-900">1.4×</button>
+      </div>
+      <select id="voiceSelect" class="ml-auto text-xs bg-white border border-slate-200 rounded px-2 py-1 max-w-[140px] text-slate-700"></select>
+    </div>
+  </div>
+
+  <script>
+    // ===== DATA =====
+    const competencies = [
+      { icon: '<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/>', title: 'AI & Intelligent Systems', desc: 'Certified Azure AI Engineer Associate (AI-102) with hands-on expertise in Multi-Agent AI systems, LLM integration (Meta Llama, Groq AI), Azure AI Foundry services, prompt engineering, and RAG patterns.' },
+      { icon: '<path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 15.9"/>', title: 'Cloud Architecture & Microservices', desc: 'Deep expertise in Azure Cloud platform (Azure Functions, APIM, App Services, Key Vault) and Pivotal Cloud Foundry. Proficient in event-driven architectures, CI/CD with Azure DevOps and Terraform.' },
+      { icon: '<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>', title: 'Full-Stack Development', desc: 'Expert in Microsoft .NET ecosystem (C#, ASP.NET Core, Web API, WPF, EF Core), Python (FastAPI), Angular 20+, and enterprise integration patterns. Strong advocate for code quality and security.' },
+      { icon: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>', title: 'Data Engineering & Search', desc: 'Skilled in SQL Server, Oracle, ElasticSearch, and vector databases (LanceDB, ChromaDB). Experience with ETL (SSIS), real-time streaming (Kafka), and caching strategies (Redis).' },
+      { icon: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>', title: 'Technical Leadership', desc: 'Proven ability to lead cross-functional teams, mentor developers, conduct architectural reviews, and drive innovation. GenAI Champion (Q4 2024) and GitHub Copilot Hackathon winner.' },
+      { icon: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>', title: 'Delivery Excellence', desc: 'Strong foundation in Agile methodologies. Track record of delivering mission-critical applications while maintaining code quality, compliance, and exceeding client expectations.' },
+    ];
+
+    const skillCategories = {
+      ai: { label: 'AI & Cloud', skills: [{name:'Azure AI Foundry',level:'Expert'},{name:'Azure OpenAI Service',level:'Expert'},{name:'Multi-Agent AI',level:'Expert'},{name:'PhiData Framework',level:'Advanced'},{name:'LLM Integration (Llama, Groq)',level:'Advanced'},{name:'RAG Patterns',level:'Advanced'},{name:'GitHub Copilot',level:'Expert'},{name:'Azure Functions',level:'Expert'},{name:'Azure APIM',level:'Expert'},{name:'Pivotal Cloud Foundry',level:'Advanced'},{name:'Document Intelligence',level:'Advanced'},{name:'Azure AI Search',level:'Advanced'}]},
+      backend: { label: 'Backend & Languages', skills: [{name:'C# / .NET 8',level:'Expert'},{name:'Python',level:'Advanced'},{name:'ASP.NET Core',level:'Expert'},{name:'Web API',level:'Expert'},{name:'FastAPI',level:'Advanced'},{name:'WCF',level:'Expert'},{name:'Entity Framework Core',level:'Expert'},{name:'LINQ',level:'Expert'},{name:'Windows Services',level:'Expert'},{name:'SQL / PL/SQL',level:'Expert'},{name:'REST / OAuth 2.0',level:'Expert'},{name:'ODATA / RETS',level:'Advanced'}]},
+      frontend: { label: 'Frontend & UI', skills: [{name:'Angular v20',level:'Expert'},{name:'TypeScript',level:'Expert'},{name:'JavaScript',level:'Expert'},{name:'HTML / CSS',level:'Expert'},{name:'WPF / XAML',level:'Expert'},{name:'ASP.NET MVC 5',level:'Expert'},{name:'Node.js',level:'Advanced'},{name:'jQuery / AJAX',level:'Expert'},{name:'Silverlight',level:'Expert'},{name:'Windows Forms',level:'Expert'}]},
+      data: { label: 'Data & Databases', skills: [{name:'SQL Server 2022',level:'Expert'},{name:'Oracle 11g',level:'Expert'},{name:'ElasticSearch',level:'Expert'},{name:'LanceDB',level:'Advanced'},{name:'ChromaDB',level:'Advanced'},{name:'Kafka',level:'Advanced'},{name:'Redis Cache',level:'Advanced'},{name:'SSIS',level:'Expert'},{name:'Kibana / Logstash',level:'Advanced'}]},
+      devops: { label: 'DevOps & IAM', skills: [{name:'Azure DevOps',level:'Expert'},{name:'Terraform',level:'Advanced'},{name:'Jenkins',level:'Expert'},{name:'GitHub',level:'Expert'},{name:'ForgeRock IAM',level:'Expert'},{name:'OKTA CIAM',level:'Expert'},{name:'Azure Active Directory',level:'Expert'},{name:'Google Apigee',level:'Advanced'},{name:'Veracode / Fortify',level:'Expert'},{name:'App Insights / Splunk',level:'Expert'}]},
+      testing: { label: 'Testing & Tools', skills: [{name:'Xunit / Nunit',level:'Expert'},{name:'Moq',level:'Expert'},{name:'MS Test / Fakes',level:'Expert'},{name:'Postman / Newman',level:'Expert'},{name:'NeoLoad',level:'Advanced'},{name:'ANTS Profiler',level:'Expert'},{name:'SoapUI',level:'Advanced'},{name:'Visual Studio 2022',level:'Expert'},{name:'WhiteSource',level:'Advanced'}]},
+    };
+
+    const certifications = [
+      { id:'gh300', code:'GH-300', title:'GitHub Copilot', issuer:'Microsoft', date:'Active', active:true, gradient:['#5F2C82','#49A09D'] },
+	  { id:'ai102', code:'AI-102', title:'Azure AI Engineer Associate', issuer:'Microsoft', date:'Active', active:true, gradient:['#00B7C3','#0078D4'] },
+      { id:'az204', code:'AZ-204', title:'Azure Developer Associate', issuer:'Microsoft', date:'Earned', active:false, gradient:['#50E6FF','#0078D4'] },
+      { id:'ai900', code:'AI-900', title:'Azure AI Fundamentals', issuer:'Microsoft', date:'Earned', active:false, gradient:['#7FBA00','#0078D4'] },
+      { id:'70502', code:'70-502', title:'MCTS - WPF Application Development', issuer:'Microsoft', date:'Legacy', active:false, gradient:['#5F2C82','#49A09D'] },
+      { id:'70536', code:'70-536', title:'MCTS - Application Development Foundation', issuer:'Microsoft', date:'Legacy', active:false, gradient:['#5F2C82','#49A09D'] },
+      { id:'angular', code:'CCP', title:'Angular 6 Certification', issuer:'Cognizant', date:'Earned', active:false, gradient:['#2F78C4','#000048'] },
+    ];
+
+    const projects = [
+      { title:'ForgeRock CIAM API Migration', client:'Royal London Group, UK', role:'Senior Full Stack Engineer', period:'Jan 2023 – Present', teamSize:15, current:true, tech:['Azure Functions','C#','.NET Core','ForgeRock IAM','APIM','Terraform','Azure DevOps','GitHub Copilot'], description:'Comprehensive Customer Identity and Access Management (CIAM) solution managing identity and access for all internal and external applications within RLG. Covers registration, login, user management, and authentication using ForgeRock capabilities.', highlights:['Designed and developed CIAM services using Azure Functions, APIM, KeyVault, App Insights, and App Registration','Architected, developed, and deployed ForgeRock Journey enhancing authentication processes','Implemented unit tests using Moq achieving superior code metrics','Developed CI/CD pipelines using Azure DevOps YAML and Terraform scripts','Served as SME for MI stats from ForgeRock IAM cloud using PowerShell and REST APIs','Managed production support using ServiceNow, Splunk, and Azure App Insights'] },
+      { title:'ISA – Fund Suggestions using Multi-Agent AI', client:'Royal London Group, UK', role:'Senior Full Stack Engineer', period:'Feb 2025', teamSize:6, featured:true, tech:['Python','FastAPI','PhiData Framework','Groq AI','Meta Llama','Angular','GitHub Copilot','Yahoo Finance'], description:'Innovative ISA Portal leveraging advanced Multi-Agent AI technology with chatbots providing personalized fund portfolio guidance. Customers receive intelligent, real-time investment recommendations tailored to their financial goals.', highlights:['Developed ISA Portal using Python and FastAPI for robust API endpoints','Implemented PhiData Framework to manage multi-agent workflows','Integrated Groq AI to connect with Meta Llama LLMs for personalized suggestions','Utilized Yahoo Finance tools for fund analysis based on risk, period, and contribution parameters','Demonstrated POC during client CXO visit to Chennai ODC, showcasing project impact'] },
+      { title:'OneEV Smart Charge — AI-Powered EV Charging Coordination', client:'Cognizant Challenge (Internal)', role:'Full Stack Engineer', period:'Aug 2025', teamSize:1, hackathon:true, tech:['Python','Flask','Flask-RESTX','OpenAI GPT-4','Azure OpenAI','Angular 20','Angular Material','TypeScript','RxJS','SCSS','GitHub Copilot','Azure App Service'], description:'Full-stack, AI-enhanced communication platform built end-to-end using GitHub Copilot as the primary AI pair-programmer for the Cognizant "Vibe Coding with GitHub Copilot" challenge. Solves real-world EV charging coordination problems in a corporate office environment (Cognizant India) — eliminating the pain point of associates walking to check charger availability by replacing it with a digital coordination layer.', highlights:['Integrated OpenAI GPT-4 Turbo to generate polite, culturally-aware (Indian office context) messages for charging coordination between colleagues','Built a live wait-queue system with join/leave APIs, position tracking, urgency levels, and automated notifications','Designed 15+ AI prompting strategies covering queue optimisation, timeout management, fairness monitoring, and smart rescheduling','Designed clean RESTful endpoints using Flask blueprints with auto-generated Swagger/OpenAPI documentation via Flask-RESTX','Built mobile-first Angular 20 SPA with Angular Material components, reactive RxJS data streams, and polling-based real-time updates','Seamlessly supports both standard OpenAI API and Azure OpenAI endpoint via environment variables — no code changes needed','Implemented graceful AI degradation with mock responses when API key is unavailable, enabling demo-ready offline usage','Leveraged GitHub Copilot throughout — scaffolding Flask blueprints, Angular components, TypeScript services, and complex prompt templates'] },
+      { title:'AI-Powered Vendor Risk Scoring & Contract Compliance Monitor', client:'Codex Hackathon 2026 (Internal)', role:'Full Stack Engineer', period:'2026', teamSize:1, hackathon:true, tech:['OpenAI Codex','Multi-Agent AI','Angular','Azure OpenAI','REST APIs','Dashboard UI'], description:'Intelligent vendor management platform using AI agents to continuously assess vendor risk across financial health, cybersecurity posture, SLA adherence, and contract compliance. Built with AI-assisted development using OpenAI Codex to accelerate solution design, agent orchestration, and full-stack development.', highlights:['Designed and developed an intelligent vendor management platform using AI agents for continuous vendor risk assessment','Implemented a multi-agent architecture comprising Risk Assessment, Cybersecurity, Contract Compliance, SLA Monitoring, Reporting, and Orchestration agents','Built a dashboard-driven solution generating vendor risk scorecards, detecting SLA breaches, and identifying compliance gaps','Provided actionable recommendations for risk mitigation through automated executive reporting','Leveraged OpenAI Codex throughout to accelerate solution design, agent orchestration, API integration, and full-stack development'] },
+      { title:'Websites and OKTA CIAM API Migration', client:'Premera Blue Cross, USA', role:'Senior Full Stack Engineer', period:'Apr 2022 – Dec 2022', teamSize:10, tech:['Angular 10','C#','ASP.NET Core','Azure Functions','OKTA IAM','Event-driven Architecture'], description:'Member Portal, Customer Support tool, and other services migrated from SecureAuth and other IAM solutions to OKTA IAM, enhancing security and user login/SSO experience using Event-driven Architecture.', highlights:['Designed CIAM Services with Azure Functions using Event-driven Architecture','Architected and implemented CIAM Common shared nuget package across all Azure Functions','Mitigated Fortify and WhiteSource scan issues','Developed CI/CD deployment via Azure DevOps','Created Azure Dashboard to monitor API CPU and Memory Usage'] },
+      { title:'Trestle - Listing Data Management Platform', client:'CoreLogic Inc., USA', role:'Senior Full Stack Engineer', period:'Mar 2017 – Mar 2022', teamSize:15, tech:['Angular 2+','C#','ASP.NET MVC','.NET Core','ElasticSearch','SQL Server','Kafka','Redis','PCF'], description:'Platinum certified RESO Data Dictionary platform providing ODATA and RETS standards for MLS data. Comprehensive listing data management and property information tool for brokers and multiple listing organizations.', highlights:['Designed screens, services, and nuget packages with high code quality','Architected Entity Framework Core in Angular web application with multi-target framework compatibility','Built Kafka Connectors Dashboard in Angular using Kafka REST APIs','Performed load testing using NeoLoad in Cloud instances','Automated API integration testing via Jenkins with Newman scripts','Improved Web API performance using Redis Cache and custom Elastic Search queries','Implemented Elastic Kibana Watcher for monitoring API logs and alerting','SME for RESO standard data content patches'] },
+      { title:'Provider IT', client:'Humana Inc., USA', role:'Senior Developer', period:'Jan 2012 – Feb 2017', teamSize:8, tech:['C#','ASP.NET MVC','Windows Service','Oracle','SQL Server','SSIS'], description:'Provider Data Management applications providing up-to-date provider data per Humana standards. Supports network operations through IT, communications, training, policy documentation, and provider contracting standardization.', highlights:['Managed and led software development team of 4+ developers','Developed screens, services, SSIS packages with high code quality','Created technical design documents for management approval','Idea Champion for the team driving innovation culture','Performed Codenizant audit for project code quality'] },
+      { title:'In-Store Management', client:'Target Corporation, USA', role:'Developer', period:'Nov 2011 – Jan 2012', teamSize:6, tech:['C#','Silverlight','WCF','SQL Server'], description:'Web application to manage in-store promotions and distributions across Target retail shops in the United States.', highlights:['Gathered and analyzed business and functional requirements','UI design and development using C#, Silverlight, and WCF services','Unit testing using MS Test with high code coverage','Supported business and functional acceptance testing across SIT, UAT, and Prod'] },
+      { title:'Nordic Front Office Solution (Sweden)', client:'Royal and Sun Alliance, Stockholm', role:'Developer', period:'Jan 2010 – Nov 2011', teamSize:35, tech:['C#','WPF','WCF','MVVM','Infragistics','Microsoft Enterprise Library'], description:'Stand-alone Windows application to manage RSA insurance business operations including customer details, quotations, policies, and payments. RSA serves 130+ countries with operations in 33+ countries.', highlights:['UI design and development using C#, WPF, WCF','Performance improvement and memory leak correction using ANTS profiler','Implemented logging using Microsoft Enterprise Library','Onsite deployment in Stockholm, Sweden'] },
+      { title:'Nordic Front Office Solution (Denmark)', client:'Royal and Sun Alliance, Copenhagen', role:'Developer', period:'Nov 2008 – Dec 2009', teamSize:35, tech:['C#','WPF','WCF','MVVM','OpenXML','InfoPath','BizTalk'], description:'Initial Nordic Front Office Solution deployment for RSA Copenhagen, Denmark. Established the MVVM pattern foundation for the broader Nordic insurance platform.', highlights:['UI design and development using C#, WPF, WCF','Developed WCF services to expose functionality integrating with BizTalk','SME for Send Out Guide module for external client communication','Developed custom templates using OpenXML and InfoPath for PDF generation','Onsite deployment in Copenhagen, Denmark'] },
+    ];
+
+    const achievements = [
+      { icon:'<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>', title:'Spirit of Royal London (SoRL) CEO Award', detail:"Presented by CEO Barry O'Dwyer & COO Peter Josse, Royal London Group — for contributions to AI and GitHub Copilot adoption", year:'2026' },
+      { icon:'<path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/>', title:'Azure AI Engineer Associate (AI-102)', detail:'Microsoft Certification – May 2026', year:'2026' },
+      { icon:'<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/>', title:'GenAI Champion', detail:'Cognizant Cheers Award – Q4 2024', year:'2024' },
+      { icon:'<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>', title:'GitHub Copilot Fusion Hackathon', detail:'Won 7th Place – Season 1, Q3 2024', year:'2024' },
+      { icon:'<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>', title:'Excellence in AI Skill Development', detail:'Cognizant Cheers – Q3 2024', year:'2024' },
+      { icon:'<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>', title:'Platinum Award – Passion', detail:'Client Appreciations – Q3 2019', year:'2019' },
+      { icon:'<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>', title:'Associate of the Quarter', detail:'Cognizant – Q1 2019', year:'2019' },
+      { icon:'<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>', title:'Spot Light Award', detail:'Remarkable contribution to Client (CIO) Visit', year:'' },
+      { icon:'<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>', title:'Associate of the Month', detail:'Cognizant Recognition', year:'' },
+      { icon:'<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>', title:'Multiple Onsite Assignments', detail:'USA, Denmark, Sweden', year:'' },
+      { icon:'<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>', title:'On the Spot Award (.NET)', detail:'Tata Consultancy Services Limited', year:'' },
+    ];
+
+    // ===== NARRATION SCRIPTS (first-person, ~30-45s each) =====
+    const narrations = {
+      home: "Hi there, and welcome! I'm Mohan Prakasham — thanks for stopping by. I'm a Microsoft certified Azure AI Engineer with deep enterprise foundations. What drives me is building software that lasts — with sound architecture, code quality, performance, and security at the core. Today, I'm focused on the exciting frontier of AI — designing intelligent systems that combine large language models, cloud architecture, and real business value. So please, take your time and explore around! And wherever you see the 'Hear Mohan explain' button, just click it — I'll personally walk you through that part of my journey. So glad to have you here!",
+      about: "Over seventeen years, I've built enterprise software across insurance, healthcare, real estate, and retail. What drives me is taking a complex business problem and turning it into a well-architected solution — clean code, strong performance, and security baked in from day one. These days my real passion sits at the intersection of artificial intelligence and the cloud, building intelligent systems that deliver genuine business value, not just demos.",
+      skills: "My technical foundation spans the full Microsoft dot-NET ecosystem — C-sharp, ASP-NET Core, Web API, and Entity Framework Core — combined with Python, FastAPI, and Angular for modern stacks. On the AI side, I work with Azure AI Foundry, Azure OpenAI, and multi-agent frameworks like PhiData. I'm also deeply hands-on with cloud — Azure Functions, APIM, identity systems like ForgeRock and OKTA, and CI/CD using Azure DevOps and Terraform.",
+      certifications: "My currently active certification is the Microsoft Certified Azure AI Engineer Associate — that's the AI-102. Over the years, I've also earned the AZ-204 Azure Developer Associate, the AI-900 Azure AI Fundamentals, two legacy MCTS certifications in dot-NET and WPF development, and a Cognizant CCP in Angular. I believe in learning continuously, because this industry never stands still.",
+      experience: "Right now, I'm leading the ForgeRock CIAM migration for Royal London Group, the UK's largest mutual. I've also delivered a multi-agent AI proof-of-concept for ISA fund recommendations there, using PhiData, Groq, and Meta Llama. Before this, I led the OKTA migration for Premera Blue Cross in the US, and spent five years building the Trestle real estate platform for CoreLogic. Each project has taught me something new about scale, security, or intelligent design.",
+      achievements: "I've been fortunate to be recognised along the way. I was named GenAI Champion at Cognizant in Q4 2024, placed seventh in the GitHub Copilot Fusion Hackathon, and won the Platinum Award for client appreciation back in 2019. I've also had the opportunity to work onsite in the United States, Denmark, and Sweden, which has shaped my approach to cross-cultural collaboration.",
+      contact: "If you're working on something exciting in AI — and you think I could help bring it to life — I'd love to connect! I'm actively seeking AI engineering roles, multi-agent system development, and AI architecture consulting opportunities. You can reach me by email, by phone, or through LinkedIn — all the links are right here on this page. Let's build something intelligent together. Thank you for taking the time to explore my portfolio!"
+    };
+
+    const tourSequence = ['home','about','skills','certifications','experience','achievements','contact'];
+
+    // ===== RENDER FUNCTIONS =====
+    function renderCompetencies() {
+      document.getElementById('competencies').innerHTML = competencies.map(c => `<div class="group p-6 bg-white border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-md transition-all"><div class="w-11 h-11 rounded-lg bg-slate-900 flex items-center justify-center mb-5 group-hover:bg-blue-600 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg></div><h3 class="text-lg font-semibold text-slate-900 mb-3">${c.title}</h3><p class="text-sm text-slate-600 leading-relaxed">${c.desc}</p></div>`).join('');
+    }
+    let currentSkillCategory = 'ai';
+    function renderSkillTabs() {
+      document.getElementById('skillTabs').innerHTML = Object.entries(skillCategories).map(([k,c]) => `<button data-skill="${k}" class="tab-btn ${currentSkillCategory===k?'active':''} px-4 py-2.5 rounded-lg text-sm font-medium transition-all flex items-center gap-2">${c.label}</button>`).join('');
+      document.querySelectorAll('[data-skill]').forEach(b => b.addEventListener('click', () => { currentSkillCategory = b.dataset.skill; renderSkillTabs(); renderSkills(); }));
+    }
+    function renderSkills() {
+      document.getElementById('skillsGrid').innerHTML = skillCategories[currentSkillCategory].skills.map(s => `<div class="p-4 bg-slate-50 hover:bg-white border border-transparent hover:border-slate-200 rounded-lg transition-all"><div class="text-sm font-medium text-slate-900 mb-2">${s.name}</div><span class="inline-block text-xs px-2 py-0.5 rounded-full font-medium ${s.level==='Expert'?'bg-slate-900 text-white':'bg-slate-200 text-slate-700'}">${s.level}</span></div>`).join('');
+    }
+    function renderPrintAllSkills() {
+      const el = document.getElementById('printAllSkills');
+      if (!el) return;
+      el.innerHTML = Object.entries(skillCategories).map(([key, cat]) => `
+        <div class="print-skill-category">
+          <h4>${cat.label}</h4>
+          <div>
+            ${cat.skills.map(s => `<span class="print-skill-chip ${s.level === 'Expert' ? 'expert' : ''}">${s.name}</span>`).join('')}
+          </div>
+        </div>
+      `).join('') + `
+        <div style="margin-top: 0.75rem; font-size: 9pt; color: #64748b;">
+          <span style="display: inline-block; width: 10px; height: 10px; background: #0f172a; border-radius: 50%; vertical-align: middle; margin-right: 6px;"></span>Expert
+          <span style="display: inline-block; width: 10px; height: 10px; background: #cbd5e1; border-radius: 50%; vertical-align: middle; margin: 0 6px 0 14px;"></span>Advanced
+        </div>
+      `;
+    }
+    function renderCerts() {
+      document.getElementById('certGrid').innerHTML = certifications.map(c => {
+        const statusBadge = c.active
+          ? `<div class="inline-flex items-center gap-1.5 text-xs text-green-700 bg-green-50 border border-green-200 px-2 py-1 rounded-md font-medium">
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+               ${c.date}
+             </div>`
+          : `<div class="inline-flex items-center gap-1.5 text-xs text-slate-600 bg-slate-100 border border-slate-200 px-2 py-1 rounded-md font-medium">
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+               ${c.date}
+             </div>`;
+        return `<div class="group relative bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl transition-all overflow-hidden"><div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-transparent rounded-full -translate-y-12 translate-x-12 opacity-50 group-hover:opacity-100 transition-opacity"></div><div class="relative flex items-start gap-4"><div class="flex-shrink-0 transform group-hover:scale-105 transition-transform ${c.active ? '' : 'opacity-80'}"><svg viewBox="0 0 200 220" width="100" height="110" class="drop-shadow-lg"><defs><linearGradient id="grad-${c.id}" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${c.gradient[0]}"/><stop offset="100%" stop-color="${c.gradient[1]}"/></linearGradient><linearGradient id="shine-${c.id}" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="rgba(255,255,255,0.4)"/><stop offset="50%" stop-color="rgba(255,255,255,0)"/></linearGradient></defs><polygon points="100,10 180,55 180,145 100,190 20,145 20,55" fill="url(#grad-${c.id})" stroke="#ffffff" stroke-width="2"/><polygon points="100,20 170,60 170,140 100,180 30,140 30,60" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/><polygon points="100,10 180,55 180,100 100,55 20,100 20,55" fill="url(#shine-${c.id})"/><text x="100" y="85" text-anchor="middle" fill="white" font-size="13" font-weight="300" letter-spacing="2">${c.issuer.toUpperCase()}</text><text x="100" y="105" text-anchor="middle" fill="white" font-size="11" font-weight="300" letter-spacing="1">CERTIFIED</text><line x1="50" y1="115" x2="150" y2="115" stroke="rgba(255,255,255,0.5)" stroke-width="0.5"/><text x="100" y="140" text-anchor="middle" fill="white" font-size="22" font-weight="700" letter-spacing="2">${c.code}</text><circle cx="100" cy="160" r="3" fill="white"/></svg></div><div class="flex-1 min-w-0 pt-2"><div class="text-xs font-medium text-slate-500 mb-1">${c.issuer}</div><h3 class="text-base font-semibold text-slate-900 leading-tight mb-2">${c.title}</h3>${statusBadge}</div></div></div>`;
+      }).join('');
+    }
+    function renderProjects() {
+      document.getElementById('projectsList').innerHTML = projects.map((p,i) => `<div class="relative pl-12 md:pl-16 project-card ${i===0?'expanded':''}" data-idx="${i}"><div class="absolute left-2 md:left-4 top-6 w-5 h-5 rounded-full border-4 border-slate-50 ${p.current?'bg-green-500 ring-4 ring-green-100':p.featured?'bg-blue-600 ring-4 ring-blue-100':'bg-slate-400'}">${p.current?'<span class="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-75"></span>':''}</div><button class="project-toggle w-full text-left"><div class="bg-white border border-slate-200 rounded-2xl p-6 transition-all hover:shadow-md"><div class="flex items-start justify-between gap-4 flex-wrap"><div class="flex-1 min-w-0"><div class="flex items-center gap-2 flex-wrap mb-2">${p.current?'<span class="text-xs font-medium px-2 py-0.5 bg-green-100 text-green-700 rounded-md">Current</span>':''}${p.featured?'<span class="text-xs font-medium px-2 py-0.5 bg-blue-100 text-blue-700 rounded-md">AI Innovation</span>':''}${p.hackathon?'<span class="text-xs font-medium px-2 py-0.5 bg-amber-100 text-amber-700 rounded-md">🏆 Hackathon</span>':''}<span class="text-xs text-slate-500 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>${p.period}</span></div><h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-1">${p.title}</h3><div class="flex items-center gap-3 text-sm text-slate-600 flex-wrap"><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/></svg>${p.client}</span><span class="text-slate-300">·</span><span>${p.role}</span><span class="text-slate-300">·</span><span class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Team of ${p.teamSize}</span></div></div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron"><polyline points="6 9 12 15 18 9"/></svg></div><div class="project-content mt-6 pt-6 border-t border-slate-100 space-y-5 fade-in"><p class="text-sm text-slate-600 leading-relaxed">${p.description}</p><div><div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Tech Stack</div><div class="flex flex-wrap gap-1.5">${p.tech.map(t=>`<span class="text-xs px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-medium">${t}</span>`).join('')}</div></div><div><div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Key Contributions</div><ul class="space-y-2">${p.highlights.map(h=>`<li class="flex gap-3 text-sm text-slate-700"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="leading-relaxed">${h}</span></li>`).join('')}</ul></div></div></div></button></div>`).join('');
+      document.querySelectorAll('.project-toggle').forEach(b => b.addEventListener('click', e => { e.preventDefault(); const c = b.closest('.project-card'); document.querySelectorAll('.project-card').forEach(o => { if (o !== c) o.classList.remove('expanded'); }); c.classList.toggle('expanded'); }));
+    }
+    function renderAchievements() {
+      document.getElementById('achievementsGrid').innerHTML = achievements.map(a => `<div class="group p-5 bg-white border border-slate-200 rounded-xl hover:border-slate-900 hover:shadow-md transition-all"><div class="flex items-start gap-4"><div class="w-10 h-10 rounded-lg bg-slate-50 group-hover:bg-slate-900 flex items-center justify-center transition-colors flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-slate-700 group-hover:text-white transition-colors">${a.icon}</svg></div><div class="flex-1 min-w-0"><h4 class="font-semibold text-slate-900 text-sm mb-1 leading-tight">${a.title}</h4><p class="text-xs text-slate-600">${a.detail}</p>${a.year?`<div class="text-xs text-slate-400 mt-2 font-medium">${a.year}</div>`:''}</div></div></div>`).join('');
+    }
+
+    // Navbar scroll behavior
+    const navbar = document.getElementById('navbar');
+    const sections = ['home','about','skills','certifications','experience','achievements','contact'];
+    function handleScroll() {
+      if (window.scrollY > 50) navbar.classList.add('bg-white/95','backdrop-blur-md','shadow-sm','border-b','border-slate-100');
+      else navbar.classList.remove('bg-white/95','backdrop-blur-md','shadow-sm','border-b','border-slate-100');
+      for (const s of sections) {
+        const el = document.getElementById(s);
+        if (el) {
+          const r = el.getBoundingClientRect();
+          if (r.top <= 120 && r.bottom >= 120) {
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            const link = document.querySelector(`.nav-link[href="#${s}"]`);
+            if (link) link.classList.add('active');
+            break;
+          }
+        }
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+
+    // ============================================
+    // MOHAN AVATAR - Speech Synthesis Controller
+    // ============================================
+    const MohanAvatar = (function() {
+      let voices = [];
+      let selectedVoice = null;
+      let currentUtterance = null;
+      let currentRate = 1.0;
+      let isPaused = false;
+      let isSpeaking = false;
+      let tourIndex = -1;
+      let isTourMode = false;
+      let mouthInterval = null;
+      let currentNarrationKey = null;
+      let currentWordIndex = 0;
+      let currentWords = [];
+
+      const mouthShapes = [
+        'M 18 54 L 18 56 M 24 52 L 24 57 M 30 51 L 30 58 M 36 52 L 36 57 M 42 54 L 42 56',
+        'M 18 51 L 18 58 M 24 49 L 24 61 M 30 47 L 30 63 M 36 49 L 36 61 M 42 51 L 42 58',
+        'M 18 53 L 18 56 M 24 50 L 24 59 M 30 52 L 30 57 M 36 49 L 36 60 M 42 52 L 42 57',
+        'M 18 52 L 18 57 M 24 54 L 24 56 M 30 49 L 30 62 M 36 51 L 36 60 M 42 54 L 42 56',
+        'M 18 50 L 18 60 M 24 52 L 24 57 M 30 51 L 30 59 M 36 52 L 36 57 M 42 50 L 42 60',
+        'M 18 53 L 18 57 M 24 52 L 24 58 M 30 51 L 30 59 M 36 52 L 36 58 M 42 53 L 42 57',
+      ];
+
+      function loadVoices() {
+        voices = speechSynthesis.getVoices();
+        if (!voices.length) return;
+        selectedVoice = pickBestVoice();
+        populateVoiceSelector();
+      }
+
+      function pickBestVoice() {
+        // Priority: US English male voices first (most natural / expressive in most browsers)
+        const tries = [
+          v => v.lang === 'en-US' && /david/i.test(v.name),         // Microsoft David
+          v => v.lang === 'en-US' && /mark/i.test(v.name),          // Microsoft Mark
+          v => v.lang === 'en-US' && /guy/i.test(v.name),           // Microsoft Guy / Edge
+          v => v.lang === 'en-US' && /aaron/i.test(v.name),         // Apple Aaron
+          v => v.lang === 'en-US' && /alex/i.test(v.name),          // macOS Alex
+          v => v.lang === 'en-US' && /tom/i.test(v.name),           // macOS Tom
+          v => v.lang === 'en-US' && /fred/i.test(v.name),          // macOS Fred
+          v => /Google US English/i.test(v.name),                    // Chrome's default US voice
+          v => v.lang === 'en-US' && !femalePattern.test(v.name),    // Any other US male voice
+          v => v.lang === 'en-US',                                   // Any US voice
+          // Fallback to UK English male
+          v => v.lang === 'en-GB' && /daniel|george|ryan|arthur/i.test(v.name),
+          v => v.lang === 'en-GB' && !femalePattern.test(v.name),
+          // Fallback to Indian English male
+          v => /Ravi|Rishi|Prabhat/i.test(v.name),
+          v => v.lang === 'en-IN' && !femalePattern.test(v.name),
+          // Last resort: any English male voice
+          v => v.lang.startsWith('en') && !femalePattern.test(v.name),
+          v => v.lang.startsWith('en')
+        ];
+        for (const fn of tries) {
+          const found = voices.find(fn);
+          if (found) return found;
+        }
+        return voices[0];
+      }
+
+      // Female voice name patterns to filter out (browsers don't expose gender consistently)
+      const femalePattern = /female|heera|priya|kalpana|aishwarya|neerja|raveena|swara|zira|hazel|eva|linda|sandy|susan|catherine|samantha|karen|victoria|allison|ava|tessa|veena|fiona|moira|serena|kate|chloe|tracy|amy|nicki|rachel|emma|olivia|aria|jenny|sara|sarah|carol|nora|nicole|joanna|salli|kimberly|kendra|ivy|sonia|libby|michelle|jane|natasha|clara|elsa|isabella|francesca|carla|paulina|ines|catarina|joana|gabriela|valentina|camila|mia|laila|hala|amira|noura|mei|xiaoxiao|kyoko/i;
+
+      function populateVoiceSelector() {
+        const sel = document.getElementById('voiceSelect');
+        if (!sel) return;
+
+        // Filter to English male voices
+        const maleVoices = voices.filter(v => v.lang.startsWith('en') && !femalePattern.test(v.name));
+
+        // Preferred names per region (priority male voices)
+        const preferred = {
+          'en-IN': /ravi|rishi|prabhat/i,
+          'en-GB': /daniel|george|ryan|arthur|oliver|uk english male/i,
+          'en-US': /david|mark|aaron|alex|guy|tom|fred|us english/i,
+          'en-AU': /lee|james|russell/i,
+        };
+
+        // Pick best one voice per region
+        const curated = [];
+        const seenLangs = new Set();
+        for (const lang of ['en-US', 'en-GB', 'en-IN', 'en-AU']) {
+          const inLang = maleVoices.filter(v => v.lang === lang);
+          if (!inLang.length) continue;
+          const pick = preferred[lang] ? inLang.find(v => preferred[lang].test(v.name)) : null;
+          curated.push(pick || inLang[0]);
+          seenLangs.add(lang);
+        }
+        // Add any other English locales not covered (1 each), excluding ones already added
+        const others = maleVoices.filter(v => !seenLangs.has(v.lang));
+        const otherLangs = new Set();
+        for (const v of others) {
+          if (!otherLangs.has(v.lang)) {
+            curated.push(v);
+            otherLangs.add(v.lang);
+          }
+        }
+
+        sel.innerHTML = curated.map(v => {
+          const accent = v.lang === 'en-US' ? 'US Accent'
+                       : v.lang === 'en-GB' ? 'UK Accent'
+                       : v.lang === 'en-IN' ? 'Indian Accent'
+                       : v.lang === 'en-AU' ? 'Australian Accent'
+                       : v.lang;
+          const label = `Mohan · ${accent}`;
+          return `<option value="${v.name}" ${v === selectedVoice ? 'selected' : ''}>${label}</option>`;
+        }).join('');
+        sel.onchange = (e) => {
+          selectedVoice = voices.find(v => v.name === e.target.value) || selectedVoice;
+        };
+      }
+
+      function animateMouth(start) {
+        const mouth = document.getElementById('mohanMouth');
+        const overlay = document.getElementById('widgetMouthSvg');
+        if (!mouth) return;
+        if (start) {
+          if (overlay) overlay.style.opacity = '1';
+          let i = 0;
+          mouthInterval = setInterval(() => {
+            mouth.setAttribute('d', mouthShapes[i % mouthShapes.length]);
+            i++;
+          }, 130);
+        } else {
+          if (mouthInterval) clearInterval(mouthInterval);
+          mouthInterval = null;
+          mouth.setAttribute('d', mouthShapes[0]);
+          if (overlay) overlay.style.opacity = '0';
+        }
+      }
+
+      function expand() {
+        const widget = document.getElementById('mohanWidget');
+        widget.classList.remove('minimized');
+        widget.classList.add('expanded');
+        // Force solid styling directly — beats any CSS conflict
+        widget.style.backgroundColor = '#ffffff';
+        widget.style.border = '1px solid #e2e8f0';
+        widget.style.boxShadow = '0 20px 50px rgba(0,0,0,0.25)';
+        widget.style.borderRadius = '1rem';
+        document.getElementById('widgetHeader').classList.remove('hidden');
+        document.getElementById('widgetHeader').classList.add('flex');
+        document.getElementById('widgetExpandedContent').classList.remove('hidden');
+        document.getElementById('widgetControls').classList.remove('hidden');
+        document.getElementById('widgetControls').classList.add('flex');
+        document.getElementById('pulseRings').classList.remove('hidden');
+      }
+
+      function minimize() {
+        stop();
+        const widget = document.getElementById('mohanWidget');
+        widget.classList.add('minimized');
+        widget.classList.remove('expanded');
+        // Clear inline styles so the minimized round transparent badge shows
+        widget.style.backgroundColor = '';
+        widget.style.border = '';
+        widget.style.boxShadow = '';
+        widget.style.borderRadius = '';
+        document.getElementById('widgetHeader').classList.add('hidden');
+        document.getElementById('widgetHeader').classList.remove('flex');
+        document.getElementById('widgetExpandedContent').classList.add('hidden');
+        document.getElementById('widgetControls').classList.add('hidden');
+        document.getElementById('widgetControls').classList.remove('flex');
+        document.getElementById('pulseRings').classList.add('hidden');
+      }
+
+      function setCaption(text) {
+        const el = document.getElementById('captionText');
+        if (!el) return;
+        currentWords = text.split(/\s+/);
+        currentWordIndex = 0;
+        el.innerHTML = currentWords.map((w, i) => `<span class="caption-word" data-i="${i}">${w}</span>`).join(' ');
+        el.scrollTop = 0;
+      }
+
+      function highlightWordAt(charIndex) {
+        if (!currentWords.length || !currentNarrationKey) return;
+        let count = 0;
+        for (let i = 0; i < currentWords.length; i++) {
+          count += currentWords[i].length + 1;
+          if (charIndex < count) {
+            if (i !== currentWordIndex) {
+              const spans = document.querySelectorAll('.caption-word');
+              spans.forEach((s, idx) => s.classList.toggle('spoken', idx <= i));
+              currentWordIndex = i;
+              // Auto-scroll the caption container to keep the current word visible
+              const container = document.getElementById('captionText');
+              const currentSpan = spans[i];
+              if (container && currentSpan) {
+                const cRect = container.getBoundingClientRect();
+                const sRect = currentSpan.getBoundingClientRect();
+                if (sRect.bottom > cRect.bottom - 4) {
+                  container.scrollTo({ top: container.scrollTop + (sRect.bottom - cRect.bottom) + 24, behavior: 'smooth' });
+                } else if (sRect.top < cRect.top + 4) {
+                  container.scrollTo({ top: container.scrollTop - (cRect.top - sRect.top) - 12, behavior: 'smooth' });
+                }
+              }
+            }
+            break;
+          }
+        }
+      }
+
+      // Section-specific header titles
+      const sectionTitles = {
+        home: '👋 Introducing Mohan',
+        about: '🎯 About Mohan',
+        skills: '⚙️ Mohan on his Skills',
+        certifications: '🏅 Mohan on his Certifications',
+        experience: '💼 Mohan on his Experience',
+        achievements: '🏆 Mohan on his Achievements',
+        contact: '📬 Mohan on getting in touch'
+      };
+
+      function speak(key) {
+        if (!('speechSynthesis' in window)) {
+          alert('Sorry, your browser does not support speech synthesis. Please try Chrome, Edge, or Safari.');
+          return;
+        }
+        stop();
+        const text = narrations[key];
+        if (!text) return;
+        currentNarrationKey = key;
+
+        // Update section-specific header title
+        const titleEl = document.getElementById('widgetHeaderTitle');
+        if (titleEl) titleEl.textContent = sectionTitles[key] || 'Mohan is speaking';
+
+        expand();
+        setCaption(text);
+
+        // Mark active button
+        document.querySelectorAll('.narrate-btn').forEach(b => b.classList.remove('playing'));
+        const activeBtn = document.querySelector(`[data-narrate="${key}"]`);
+        if (activeBtn) activeBtn.classList.add('playing');
+
+        const utt = new SpeechSynthesisUtterance(text);
+        if (selectedVoice) utt.voice = selectedVoice;
+        utt.rate = currentRate;
+        utt.pitch = 1.05;
+        utt.volume = 1.0;
+        utt.lang = selectedVoice ? selectedVoice.lang : 'en-IN';
+
+        utt.onstart = () => {
+          isSpeaking = true;
+          isPaused = false;
+          animateMouth(true);
+          updatePlayPauseIcon();
+        };
+        utt.onboundary = (e) => {
+          if (e.name === 'word') highlightWordAt(e.charIndex);
+        };
+        utt.onend = () => {
+          isSpeaking = false;
+          animateMouth(false);
+          document.querySelectorAll('.narrate-btn').forEach(b => b.classList.remove('playing'));
+          // Mark all words spoken
+          document.querySelectorAll('.caption-word').forEach(s => s.classList.add('spoken'));
+          if (isTourMode) {
+            tourIndex++;
+            if (tourIndex < tourSequence.length) {
+              const next = tourSequence[tourIndex];
+              const section = document.getElementById(next);
+              if (section) section.scrollIntoView({ behavior: 'smooth' });
+              setTimeout(() => speak(next), 1200);
+            } else {
+              isTourMode = false;
+              tourIndex = -1;
+            }
+          }
+        };
+        utt.onerror = (e) => {
+          if (e.error !== 'canceled' && e.error !== 'interrupted') {
+            console.warn('Speech error:', e.error);
+          }
+          isSpeaking = false;
+          animateMouth(false);
+        };
+
+        currentUtterance = utt;
+        speechSynthesis.speak(utt);
+      }
+
+      function togglePause() {
+        // If stopped, replay the last narration (or 'home' if nothing played yet)
+        if (!isSpeaking) {
+          speak(currentNarrationKey || 'home');
+          return;
+        }
+        if (isPaused) {
+          speechSynthesis.resume();
+          isPaused = false;
+          animateMouth(true);
+        } else {
+          speechSynthesis.pause();
+          isPaused = true;
+          animateMouth(false);
+        }
+        updatePlayPauseIcon();
+      }
+
+      function updatePlayPauseIcon() {
+        const icon = document.getElementById('playPauseIcon');
+        if (!icon) return;
+        if (isPaused || !isSpeaking) {
+          icon.innerHTML = '<polygon points="5 3 19 12 5 21 5 3"/>';
+        } else {
+          icon.innerHTML = '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';
+        }
+      }
+
+      function stop() {
+        if (speechSynthesis.speaking || speechSynthesis.pending) {
+          speechSynthesis.cancel();
+        }
+        isSpeaking = false;
+        isPaused = false;
+        isTourMode = false;
+        tourIndex = -1;
+        animateMouth(false);
+        document.querySelectorAll('.narrate-btn').forEach(b => b.classList.remove('playing'));
+        updatePlayPauseIcon();
+      }
+
+      function startTour() {
+        isTourMode = true;
+        tourIndex = 0;
+        const first = tourSequence[0];
+        const section = document.getElementById(first);
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => speak(first), 800);
+      }
+
+      function handleClick() {
+        const widget = document.getElementById('mohanWidget');
+        if (widget.classList.contains('minimized')) {
+          speak('home');
+        }
+      }
+
+      function setSpeed(speed) {
+        currentRate = parseFloat(speed);
+        document.querySelectorAll('.speed-btn').forEach(b => {
+          const active = parseFloat(b.dataset.speed) === currentRate;
+          b.className = active
+            ? 'speed-btn px-2.5 py-1 text-xs rounded-md font-bold bg-slate-900 text-white border border-slate-900 shadow-sm'
+            : 'speed-btn px-2.5 py-1 text-xs rounded-md bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 hover:text-slate-900';
+        });
+        // If currently speaking, restart with new speed so the change is audible
+        if (isSpeaking && currentNarrationKey) {
+          const key = currentNarrationKey;
+          stop();
+          setTimeout(() => speak(key), 250);
+        }
+      }
+
+      function init() {
+        // Voices load asynchronously
+        loadVoices();
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+          speechSynthesis.onvoiceschanged = loadVoices;
+        }
+        // Retry in case voices weren't loaded yet
+        setTimeout(loadVoices, 500);
+        setTimeout(loadVoices, 1500);
+
+        // Wire up narrate buttons
+        document.querySelectorAll('[data-narrate]').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const key = btn.dataset.narrate;
+            if (isSpeaking && currentNarrationKey === key) {
+              stop();
+            } else {
+              speak(key);
+            }
+          });
+        });
+        // Speed buttons
+        document.querySelectorAll('.speed-btn').forEach(b => {
+          b.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setSpeed(b.dataset.speed);
+          });
+        });
+        // Stop speech when leaving page
+        window.addEventListener('beforeunload', stop);
+      }
+
+      return { init, speak, stop, togglePause, startTour, minimize, handleClick, setSpeed };
+    })();
+
+    // ===== PRINT / RESUME DOWNLOAD HELPERS =====
+    function printVisualPDF() {
+      document.body.classList.remove('ats-print-mode');
+      window.print();
+    }
+    function printATSPDF() {
+      document.body.classList.add('ats-print-mode');
+      setTimeout(() => {
+        window.print();
+        // Remove the class after print dialog closes
+        setTimeout(() => document.body.classList.remove('ats-print-mode'), 1000);
+      }, 50);
+    }
+    function toggleDownloadMenu(e) {
+      if (e) { e.stopPropagation(); }
+      const menu = document.getElementById('downloadMenu');
+      if (menu) menu.classList.toggle('hidden');
+    }
+    function closeDownloadMenu() {
+      const menu = document.getElementById('downloadMenu');
+      if (menu) menu.classList.add('hidden');
+    }
+    // Close download menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const wrap = document.getElementById('downloadMenuWrap');
+      if (wrap && !wrap.contains(e.target)) closeDownloadMenu();
+    });
+
+    // ===== HERO ANIMATIONS (Combo A) =====
+
+    // 1. Typing animation - cycles through identities
+    (function setupTypingAnimation() {
+      const el = document.getElementById('typingText');
+      if (!el) return;
+      const phrases = [
+        'Senior Software Engineer',
+        'Azure AI Engineer',
+        'Multi-Agent AI Developer',
+        'Full-Stack Cloud Engineer',
+        'Builder of Intelligent Systems'
+      ];
+      let phraseIdx = 0, charIdx = 0, deleting = false;
+      function tick() {
+        const phrase = phrases[phraseIdx];
+        if (deleting) {
+          charIdx--;
+          el.textContent = phrase.substring(0, charIdx);
+          if (charIdx === 0) {
+            deleting = false;
+            phraseIdx = (phraseIdx + 1) % phrases.length;
+            setTimeout(tick, 400);
+            return;
+          }
+          setTimeout(tick, 30);
+        } else {
+          charIdx++;
+          el.textContent = phrase.substring(0, charIdx);
+          if (charIdx === phrase.length) {
+            deleting = true;
+            setTimeout(tick, 2200);
+            return;
+          }
+          setTimeout(tick, 65);
+        }
+      }
+      tick();
+    })();
+
+    // 2. Count-up animation for hero stats
+    function runHeroCountUp() {
+      // Try multiple selectors to find the stats — covers any stale class name
+      let stats = document.querySelectorAll('.hero-stat');
+      if (!stats.length) stats = document.querySelectorAll('.stat-count');
+      // Last resort: find by structure — direct children of the 4-column grid in hero
+      if (!stats.length) {
+        const heroGrid = document.querySelector('#home .grid.grid-cols-2.sm\\:grid-cols-4');
+        if (heroGrid) {
+          stats = heroGrid.querySelectorAll('div > div.text-3xl');
+        }
+      }
+      if (!stats.length) return;
+
+      // Hardcoded targets in case data-attributes are missing from cached HTML
+      const fallback = [
+        { target: 17, suffix: '+' },
+        { target: 8, suffix: '' },
+        { target: 7, suffix: '' },
+        { target: 4, suffix: '' }
+      ];
+
+      stats.forEach((el, i) => {
+        let target = parseInt(el.dataset.target, 10);
+        let suffix = el.dataset.suffix || '';
+        // If data-target is missing, use fallback (matches the static HTML order)
+        if (isNaN(target) && fallback[i]) {
+          target = fallback[i].target;
+          suffix = fallback[i].suffix;
+        }
+        if (isNaN(target)) {
+          return;
+        }
+        const duration = 2200;
+        const delay = 600 + i * 200;
+
+        el.textContent = '0';
+
+        setTimeout(() => {
+          const start = performance.now();
+          function step(now) {
+            const t = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.floor(eased * target);
+            el.textContent = value + suffix;
+            if (t < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        }, delay);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', runHeroCountUp);
+    } else {
+      runHeroCountUp();
+    }
+    window.addEventListener('load', () => {
+      const hasAnimated = document.querySelector('#home .text-3xl.font-bold');
+      if (hasAnimated && hasAnimated.textContent === '0') runHeroCountUp();
+    });
+
+    // ===== INITIALIZE =====
+    renderCompetencies();
+    renderSkillTabs();
+    renderSkills();
+    renderPrintAllSkills();
+    renderCerts();
+    renderProjects();
+    renderAchievements();
+    handleScroll();
+    MohanAvatar.init();
+  </script>
+</body>
+</html>
